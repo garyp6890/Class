@@ -1,0 +1,442 @@
+[
+  {
+    "id": "qa-01",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Security Account Manager (T1003.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference_answer": "APT29 (G0016) USES Security Account Manager (T1003.002), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0016",
+      "T1003.002",
+      "M1017"
+    ],
+    "supporting_triple_ids": [
+      "gold-001",
+      "gold-002"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+      "attack19.2:relationship--e51a1670-52b4-4a0e-b123-7b0ddcf30060"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-02",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to LSA Secrets (T1003.004) as reported for APT29, and what is the two-edge evidence path?",
+    "reference_answer": "APT29 (G0016) USES LSA Secrets (T1003.004), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0016",
+      "T1003.004",
+      "M1017"
+    ],
+    "supporting_triple_ids": [
+      "gold-003",
+      "gold-004"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+      "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-03",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for APT29, and what is the two-edge evidence path?",
+    "reference_answer": "APT29 (G0016) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0016",
+      "T1005",
+      "M1057"
+    ],
+    "supporting_triple_ids": [
+      "gold-005",
+      "gold-006"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+      "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-04",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Cloud Services (T1021.007) as reported for APT29, and what is the two-edge evidence path?",
+    "reference_answer": "APT29 (G0016) USES Cloud Services (T1021.007), which is MITIGATED_BY Privileged Account Management (M1026). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0016",
+      "T1021.007",
+      "M1026"
+    ],
+    "supporting_triple_ids": [
+      "gold-007",
+      "gold-008"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+      "attack19.2:relationship--dd49738c-ba78-41bb-a459-65e89d3faf2a"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-05",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Software Packing (T1027.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference_answer": "APT29 (G0016) USES Software Packing (T1027.002), which is MITIGATED_BY Antivirus/Antimalware (M1049). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0016",
+      "T1027.002",
+      "M1049"
+    ],
+    "supporting_triple_ids": [
+      "gold-009",
+      "gold-010"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+      "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-06",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Junk Data (T1001.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference_answer": "APT28 (G0007) USES Junk Data (T1001.001), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0007",
+      "T1001.001",
+      "M1031"
+    ],
+    "supporting_triple_ids": [
+      "gold-011",
+      "gold-012"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+      "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-07",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to OS Credential Dumping (T1003) as reported for APT28, and what is the two-edge evidence path?",
+    "reference_answer": "APT28 (G0007) USES OS Credential Dumping (T1003), which is MITIGATED_BY Active Directory Configuration (M1015). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0007",
+      "T1003",
+      "M1015"
+    ],
+    "supporting_triple_ids": [
+      "gold-013",
+      "gold-014"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--c7e8689c-25cf-4fac-926e-c55a2414f16c",
+      "attack19.2:relationship--fc31837d-530f-45e5-b9f8-bf6268c3ef03"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-08",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to LSASS Memory (T1003.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference_answer": "APT28 (G0007) USES LSASS Memory (T1003.001), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0007",
+      "T1003.001",
+      "M1017"
+    ],
+    "supporting_triple_ids": [
+      "gold-015",
+      "gold-016"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+      "attack19.2:relationship--b6583fd8-89f7-4494-8690-3456391bf193"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-09",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to NTDS (T1003.003) as reported for APT28, and what is the two-edge evidence path?",
+    "reference_answer": "APT28 (G0007) USES NTDS (T1003.003), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0007",
+      "T1003.003",
+      "M1017"
+    ],
+    "supporting_triple_ids": [
+      "gold-017",
+      "gold-018"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+      "attack19.2:relationship--85b3d881-a9d2-45ff-a980-95d0bd9a3dd1"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-10",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for APT28, and what is the two-edge evidence path?",
+    "reference_answer": "APT28 (G0007) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0007",
+      "T1005",
+      "M1057"
+    ],
+    "supporting_triple_ids": [
+      "gold-019",
+      "gold-006"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+      "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-11",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference_answer": "FIN7 (G0046) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0046",
+      "T1005",
+      "M1057"
+    ],
+    "supporting_triple_ids": [
+      "gold-020",
+      "gold-006"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+      "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-12",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Fallback Channels (T1008) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference_answer": "FIN7 (G0046) USES Fallback Channels (T1008), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0046",
+      "T1008",
+      "M1031"
+    ],
+    "supporting_triple_ids": [
+      "gold-021",
+      "gold-022"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+      "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-13",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Remote Desktop Protocol (T1021.001) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference_answer": "FIN7 (G0046) USES Remote Desktop Protocol (T1021.001), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0046",
+      "T1021.001",
+      "M1018"
+    ],
+    "supporting_triple_ids": [
+      "gold-023",
+      "gold-024"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+      "attack19.2:relationship--8fae4ace-c3b5-4c4b-8c1a-98a32c692849"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-14",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to SSH (T1021.004) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference_answer": "FIN7 (G0046) USES SSH (T1021.004), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0046",
+      "T1021.004",
+      "M1018"
+    ],
+    "supporting_triple_ids": [
+      "gold-025",
+      "gold-026"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+      "attack19.2:relationship--b16c27b4-f94b-43e4-832d-986c03b96ffd"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-15",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to VNC (T1021.005) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference_answer": "FIN7 (G0046) USES VNC (T1021.005), which is MITIGATED_BY Limit Software Installation (M1033). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0046",
+      "T1021.005",
+      "M1033"
+    ],
+    "supporting_triple_ids": [
+      "gold-027",
+      "gold-028"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+      "attack19.2:relationship--f5d1e0f1-0e96-41dc-86a4-79307310a001"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-16",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Protocol or Service Impersonation (T1001.003) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference_answer": "Lazarus Group (G0032) USES Protocol or Service Impersonation (T1001.003), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0032",
+      "T1001.003",
+      "M1031"
+    ],
+    "supporting_triple_ids": [
+      "gold-029",
+      "gold-030"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--0b255cef-7177-48b8-ade1-752314f90b7e",
+      "attack19.2:relationship--c64b3644-a838-4ed3-a6f3-fc770637b009"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-17",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference_answer": "Lazarus Group (G0032) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0032",
+      "T1005",
+      "M1057"
+    ],
+    "supporting_triple_ids": [
+      "gold-031",
+      "gold-006"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044",
+      "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-18",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Fallback Channels (T1008) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference_answer": "Lazarus Group (G0032) USES Fallback Channels (T1008), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0032",
+      "T1008",
+      "M1031"
+    ],
+    "supporting_triple_ids": [
+      "gold-032",
+      "gold-022"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+      "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-19",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to Remote Desktop Protocol (T1021.001) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference_answer": "Lazarus Group (G0032) USES Remote Desktop Protocol (T1021.001), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0032",
+      "T1021.001",
+      "M1018"
+    ],
+    "supporting_triple_ids": [
+      "gold-033",
+      "gold-024"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+      "attack19.2:relationship--8fae4ace-c3b5-4c4b-8c1a-98a32c692849"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-20",
+    "split": "test",
+    "question": "In this frozen subset, which mitigation is linked to SMB/Windows Admin Shares (T1021.002) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference_answer": "Lazarus Group (G0032) USES SMB/Windows Admin Shares (T1021.002), which is MITIGATED_BY Privileged Account Management (M1026). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "expected_path": [
+      "G0032",
+      "T1021.002",
+      "M1026"
+    ],
+    "supporting_triple_ids": [
+      "gold-034",
+      "gold-035"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--e6cafa6a-22ce-49f7-8136-dc5a51c3aaeb",
+      "attack19.2:relationship--935ca61c-b4ff-4cfc-a4e9-9b8aa9514ea3"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-21",
+    "split": "development",
+    "question": "Which technique in the frozen subset connects APT28 through LAMEHUG, and what evidence supports both links?",
+    "reference_answer": "APT28 (G0007) USES LAMEHUG (S9035), and LAMEHUG USES Data from Local System (T1005).",
+    "expected_path": [
+      "G0007",
+      "S9035",
+      "T1005"
+    ],
+    "supporting_triple_ids": [
+      "gold-036",
+      "gold-037"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+      "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f"
+    ],
+    "hops": 2
+  },
+  {
+    "id": "qa-22",
+    "split": "development",
+    "question": "Which technique in the frozen subset connects Lazarus Group through MagicRAT, and what evidence supports both links?",
+    "reference_answer": "Lazarus Group (G0032) USES MagicRAT (S1182), and MagicRAT USES System Network Configuration Discovery (T1016).",
+    "expected_path": [
+      "G0032",
+      "S1182",
+      "T1016"
+    ],
+    "supporting_triple_ids": [
+      "gold-038",
+      "gold-039"
+    ],
+    "supporting_document_ids": [
+      "attack19.2:relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+      "attack19.2:relationship--79c99261-dae6-4cd8-90b3-bf60fd57d5c9"
+    ],
+    "hops": 2
+  }
+]

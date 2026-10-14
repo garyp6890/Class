@@ -1,0 +1,13 @@
+{
+  "release": "19.2",
+  "source_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-19.2.json",
+  "retrieved": "2026-10-14",
+  "documents": 60,
+  "entities": 50,
+  "gold_triples": 60,
+  "qa_pairs": 22,
+  "scope": "4 groups plus selected software, techniques and mitigations; no campaigns in this first subset",
+  "annotation_note": "Reference labels are derived from official STIX, not LLM predictions. Human review is still required before calling this a manually reviewed gold set.",
+  "evaluation_note": "Extraction is scored per record for its designated endpoint pair, not every incidental claim mentioned in the description. QA answers are scoped to the selected reference paths.",
+  "source_overlap_note": "Development and test QA have distinct questions but can share entities and narrative records; this is an in-corpus benchmark."
+}

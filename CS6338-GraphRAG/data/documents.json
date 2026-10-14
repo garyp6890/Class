@@ -1,0 +1,1030 @@
+[
+  {
+    "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+    "text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+    "source_url": "https://attack.mitre.org/techniques/T1003/002",
+    "record_id": "relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Mandiant APT29 Eye Spy Email Nov 22",
+        "description": "Mandiant. (2022, May 2). UNC3524: Eye Spy on Your Email. Retrieved August 17, 2023.",
+        "url": "https://www.mandiant.com/resources/blog/unc3524-eye-spy-email"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--e51a1670-52b4-4a0e-b123-7b0ddcf30060",
+    "text": "Record context: User Training (M1017); Security Account Manager (T1003.002).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+    "source_url": "https://attack.mitre.org/techniques/T1003/002",
+    "record_id": "relationship--e51a1670-52b4-4a0e-b123-7b0ddcf30060",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+    "text": "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+    "source_url": "https://attack.mitre.org/techniques/T1003/004",
+    "record_id": "relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Mandiant APT29 Eye Spy Email Nov 22",
+        "description": "Mandiant. (2022, May 2). UNC3524: Eye Spy on Your Email. Retrieved August 17, 2023.",
+        "url": "https://www.mandiant.com/resources/blog/unc3524-eye-spy-email"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247",
+    "text": "Record context: User Training (M1017); LSA Secrets (T1003.004).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+    "source_url": "https://attack.mitre.org/techniques/T1003/004",
+    "record_id": "relationship--e643eb2e-c309-48dc-b105-ffedb4a61247",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+    "text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Mandiant APT29 Eye Spy Email Nov 22",
+        "description": "Mandiant. (2022, May 2). UNC3524: Eye Spy on Your Email. Retrieved August 17, 2023.",
+        "url": "https://www.mandiant.com/resources/blog/unc3524-eye-spy-email"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0",
+    "text": "Record context: Data Loss Prevention (M1057); Data from Local System (T1005).\n\nData loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted.",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--53e53569-4ae7-453c-953e-fc683e7794b0",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+    "text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/007",
+    "record_id": "relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Mandiant Remediation and Hardening Strategies for Microsoft 365",
+        "description": "Mandiant. (2022, August). Remediation and Hardening Strategies for  Microsoft 365 to Defend Against APT29. Retrieved February 21, 2023.",
+        "url": "https://www.mandiant.com/sites/default/files/2022-08/remediation-hardening-strategies-for-m365-defend-against-apt29-white-paper.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--dd49738c-ba78-41bb-a459-65e89d3faf2a",
+    "text": "Record context: Privileged Account Management (M1026); Cloud Services (T1021.007).\n\nLimit the number of high-privileged domain and cloud accounts, and ensure that these are not used for day-to-day operations. Ensure that on-premises accounts do not have privileged cloud permissions and that isolated, cloud-only accounts are used for managing cloud environments.(Citation: Protecting Microsoft 365 From On-Premises Attacks)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/007",
+    "record_id": "relationship--dd49738c-ba78-41bb-a459-65e89d3faf2a",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Protecting Microsoft 365 From On-Premises Attacks",
+        "description": "Microsoft. (2022, August 26). Protecting Microsoft 365 from on-premises attacks. Retrieved February 21, 2023.",
+        "url": "https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/protect-m365-from-on-premises-attacks"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+    "text": "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+    "source_url": "https://attack.mitre.org/techniques/T1027/002",
+    "record_id": "relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Mandiant No Easy Breach",
+        "description": "Dunwoody, M. and Carr, N.. (2016, September 27). No Easy Breach DerbyCon 2016. Retrieved September 12, 2024.",
+        "url": "https://www.slideshare.net/slideshow/no-easy-breach-derby-con-2016/66447908"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+    "text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. ",
+    "source_url": "https://attack.mitre.org/techniques/T1027/002",
+    "record_id": "relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+    "text": "Record context: APT28 (G0007); Junk Data (T1001.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) added \"junk data\" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a \"junk length\" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.(Citation: FireEye APT28)",
+    "source_url": "https://attack.mitre.org/techniques/T1001/001",
+    "record_id": "relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "FireEye APT28",
+        "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA’S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+        "url": "https://web.archive.org/web/20151022204649/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179",
+    "text": "Record context: Network Intrusion Prevention (M1031); Junk Data (T1001.001).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. ",
+    "source_url": "https://attack.mitre.org/techniques/T1001/001",
+    "record_id": "relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--c7e8689c-25cf-4fac-926e-c55a2414f16c",
+    "text": "Record context: APT28 (G0007); OS Credential Dumping (T1003).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018)(Citation: US District Court Indictment GRU Oct 2018)\t",
+    "source_url": "https://attack.mitre.org/techniques/T1003",
+    "record_id": "relationship--c7e8689c-25cf-4fac-926e-c55a2414f16c",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "US District Court Indictment GRU Oct 2018",
+        "description": "Brady, S . (2018, October 3). Indictment - United States vs Aleksei Sergeyevich Morenets, et al.. Retrieved October 1, 2020.",
+        "url": "https://www.justice.gov/opa/page/file/1098481/download"
+      },
+      {
+        "source_name": "ESET Sednit Part 2",
+        "description": "ESET. (2016, October). En Route with Sednit - Part 2: Observing the Comings and Goings. Retrieved November 21, 2016.",
+        "url": "http://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf"
+      },
+      {
+        "source_name": "DOJ GRU Indictment Jul 2018",
+        "description": "Mueller, R. (2018, July 13). Indictment - United States of America vs. VIKTOR BORISOVICH NETYKSHO, et al. Retrieved November 17, 2024.",
+        "url": "https://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--fc31837d-530f-45e5-b9f8-bf6268c3ef03",
+    "text": "Record context: Active Directory Configuration (M1015); OS Credential Dumping (T1003).\n\n\nManage the access control list for “Replicating Directory Changes All” and other permissions associated with domain controller replication. (Citation: AdSecurity DCSync Sept 2015) (Citation: Microsoft Replication ACL) Consider adding users to the \"Protected Users\" Active Directory security group. This can help limit the caching of users' plaintext credentials.(Citation: Microsoft Protected Users Security Group)",
+    "source_url": "https://attack.mitre.org/techniques/T1003",
+    "record_id": "relationship--fc31837d-530f-45e5-b9f8-bf6268c3ef03",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "AdSecurity DCSync Sept 2015",
+        "description": "Metcalf, S. (2015, September 25). Mimikatz DCSync Usage, Exploitation, and Detection. Retrieved December 4, 2017.",
+        "url": "https://adsecurity.org/?p=1729"
+      },
+      {
+        "source_name": "Microsoft Protected Users Security Group",
+        "description": "Microsoft. (2016, October 12). Protected Users Security Group. Retrieved May 29, 2020.",
+        "url": "https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group"
+      },
+      {
+        "source_name": "Microsoft Replication ACL",
+        "description": "Microsoft. (n.d.). How to grant the \"Replicating Directory Changes\" permission for the Microsoft Metadirectory Services ADMA service account. Retrieved December 4, 2017.",
+        "url": "https://support.microsoft.com/help/303972/how-to-grant-the-replicating-directory-changes-permission-for-the-micr"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+    "text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1003/001",
+    "record_id": "relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "ESET Sednit Part 2",
+        "description": "ESET. (2016, October). En Route with Sednit - Part 2: Observing the Comings and Goings. Retrieved November 21, 2016.",
+        "url": "http://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf"
+      },
+      {
+        "source_name": "DOJ GRU Indictment Jul 2018",
+        "description": "Mueller, R. (2018, July 13). Indictment - United States of America vs. VIKTOR BORISOVICH NETYKSHO, et al. Retrieved November 17, 2024.",
+        "url": "https://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf"
+      },
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--b6583fd8-89f7-4494-8690-3456391bf193",
+    "text": "Record context: User Training (M1017); LSASS Memory (T1003.001).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+    "source_url": "https://attack.mitre.org/techniques/T1003/001",
+    "record_id": "relationship--b6583fd8-89f7-4494-8690-3456391bf193",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+    "text": "Record context: APT28 (G0007); NTDS (T1003.003).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1003/003",
+    "record_id": "relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--85b3d881-a9d2-45ff-a980-95d0bd9a3dd1",
+    "text": "Record context: User Training (M1017); NTDS (T1003.003).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+    "source_url": "https://attack.mitre.org/techniques/T1003/003",
+    "record_id": "relationship--85b3d881-a9d2-45ff-a980-95d0bd9a3dd1",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+    "text": "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--73e0604a-2509-43a6-9318-a9494e570363",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Überwachung APT28 Forfiles June 2015",
+        "description": "Guarnieri, C. (2015, June 19). Digital Attack on German Parliament: Investigative Report on the Hack of the Left Party Infrastructure in Bundestag. Retrieved January 22, 2018.",
+        "url": "https://netzpolitik.org/2015/digital-attack-on-german-parliament-investigative-report-on-the-hack-of-the-left-party-infrastructure-in-bundestag/"
+      },
+      {
+        "source_name": "TrendMicro Pawn Storm 2019",
+        "description": "Hacquebord, F. (n.d.). Pawn Storm in 2019 A Year of Scanning and Credential Phishing on High-Profile Targets. Retrieved December 29, 2020.",
+        "url": "https://documents.trendmicro.com/assets/white_papers/wp-pawn-storm-in-2019.pdf"
+      },
+      {
+        "source_name": "DOJ GRU Indictment Jul 2018",
+        "description": "Mueller, R. (2018, July 13). Indictment - United States of America vs. VIKTOR BORISOVICH NETYKSHO, et al. Retrieved November 17, 2024.",
+        "url": "https://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf"
+      },
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+    "text": "Record context: FIN7 (G0046); Data from Local System (T1005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has collected files and other sensitive information from a compromised network.(Citation: CrowdStrike Carbon Spider August 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "CrowdStrike Carbon Spider August 2021",
+        "description": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+        "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+    "text": "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)",
+    "source_url": "https://attack.mitre.org/techniques/T1008",
+    "record_id": "relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Crowdstrike GTR2020 Mar 2020",
+        "description": "Crowdstrike. (2020, March 2). 2020 Global Threat Report. Retrieved December 11, 2020.",
+        "url": "https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6",
+    "text": "Record context: Network Intrusion Prevention (M1031); Fallback Channels (T1008).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. (Citation: University of Birmingham C2)",
+    "source_url": "https://attack.mitre.org/techniques/T1008",
+    "record_id": "relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "University of Birmingham C2",
+        "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+        "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+    "text": "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n",
+    "source_url": "https://attack.mitre.org/techniques/T1021/001",
+    "record_id": "relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "CrowdStrike Carbon Spider August 2021",
+        "description": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+        "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--8fae4ace-c3b5-4c4b-8c1a-98a32c692849",
+    "text": "Record context: User Account Management (M1018); Remote Desktop Protocol (T1021.001).\n\nLimit remote user permissions if remote access is necessary.",
+    "source_url": "https://attack.mitre.org/techniques/T1021/001",
+    "record_id": "relationship--8fae4ace-c3b5-4c4b-8c1a-98a32c692849",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+    "text": "Record context: FIN7 (G0046); SSH (T1021.004).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used SSH to move laterally through victim environments.(Citation: CrowdStrike Carbon Spider August 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/004",
+    "record_id": "relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "CrowdStrike Carbon Spider August 2021",
+        "description": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+        "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--b16c27b4-f94b-43e4-832d-986c03b96ffd",
+    "text": "Record context: User Account Management (M1018); SSH (T1021.004).\n\nLimit which user accounts are allowed to login via SSH.",
+    "source_url": "https://attack.mitre.org/techniques/T1021/004",
+    "record_id": "relationship--b16c27b4-f94b-43e4-832d-986c03b96ffd",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+    "text": "Record context: FIN7 (G0046); VNC (T1021.005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used TightVNC to control compromised hosts.(Citation: CrowdStrike Carbon Spider August 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/005",
+    "record_id": "relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "CrowdStrike Carbon Spider August 2021",
+        "description": "Loui, E. and Reynolds, J. (2021, August 30). CARBON SPIDER Embraces Big Game Hunting, Part 1. Retrieved September 20, 2021.",
+        "url": "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--f5d1e0f1-0e96-41dc-86a4-79307310a001",
+    "text": "Record context: Limit Software Installation (M1033); VNC (T1021.005).\n\nRestrict software installation to user groups that require it. A VNC server must be manually installed by the user or adversary.",
+    "source_url": "https://attack.mitre.org/techniques/T1021/005",
+    "record_id": "relationship--f5d1e0f1-0e96-41dc-86a4-79307310a001",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--0b255cef-7177-48b8-ade1-752314f90b7e",
+    "text": "Record context: Lazarus Group (G0032); Protocol or Service Impersonation (T1001.003).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware also uses a unique form of communication encryption known as FakeTLS that mimics TLS but uses a different encryption method, potentially evading SSL traffic inspection/decryption.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Destructive Malware)(Citation: McAfee Lazarus Resurfaces Feb 2018)(Citation: McAfee-GhostSecret-fixurl)",
+    "source_url": "https://attack.mitre.org/techniques/T1001/003",
+    "record_id": "relationship--0b255cef-7177-48b8-ade1-752314f90b7e",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Novetta Blockbuster Destructive Malware",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Destructive Malware Report. Retrieved November 17, 2024.",
+        "url": "https://web.archive.org/web/20160303200515/https:/operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Destructive-Malware-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Unraveling the Long Thread of the Sony Attack. Retrieved February 25, 2016.",
+        "url": "https://web.archive.org/web/20160226161828/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Report.pdf"
+      },
+      {
+        "source_name": "McAfee-GhostSecret-fixurl",
+        "description": "Ryan Sherstobitoff. (2018, April 24). Analyzing Operation GhostSecret: Attack Seeks to Steal Data Worldwide. Retrieved August 15, 2024.",
+        "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
+      },
+      {
+        "source_name": "McAfee Lazarus Resurfaces Feb 2018",
+        "description": "Sherstobitoff, R. (2018, February 12). Lazarus Resurfaces, Targets Global Banks and Bitcoin Users. Retrieved February 19, 2018.",
+        "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/lazarus-resurfaces-targets-global-banks-bitcoin-users/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--c64b3644-a838-4ed3-a6f3-fc770637b009",
+    "text": "Record context: Network Intrusion Prevention (M1031); Protocol or Service Impersonation (T1001.003).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level.",
+    "source_url": "https://attack.mitre.org/techniques/T1001/003",
+    "record_id": "relationship--c64b3644-a838-4ed3-a6f3-fc770637b009",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044",
+    "text": "Record context: Lazarus Group (G0032); Data from Local System (T1005).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) has collected data and files from compromised networks.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Loaders)(Citation: Novetta Blockbuster RATs)(Citation: Kaspersky ThreatNeedle Feb 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--3fe9b64a-6435-4592-9181-2ad50ee93044",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Novetta Blockbuster Loaders",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Loaders, Installers and Uninstallers Report. Retrieved November 17, 2024.",
+        "url": "https://web.archive.org/web/20190508165631/https://operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Loaders-Installers-and-Uninstallers-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster RATs",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Remote Administration Tools & Content Staging Malware Report. Retrieved March 16, 2016.",
+        "url": "https://web.archive.org/web/20220608001455/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-RAT-and-Staging-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Unraveling the Long Thread of the Sony Attack. Retrieved February 25, 2016.",
+        "url": "https://web.archive.org/web/20160226161828/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Report.pdf"
+      },
+      {
+        "source_name": "Kaspersky ThreatNeedle Feb 2021",
+        "description": "Vyacheslav Kopeytsev and Seongsu Park. (2021, February 25). Lazarus targets defense industry with ThreatNeedle. Retrieved October 27, 2021.",
+        "url": "https://securelist.com/lazarus-threatneedle/100803/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+    "text": "Record context: Lazarus Group (G0032); Fallback Channels (T1008).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+    "source_url": "https://attack.mitre.org/techniques/T1008",
+    "record_id": "relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Novetta Blockbuster RATs",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Remote Administration Tools & Content Staging Malware Report. Retrieved March 16, 2016.",
+        "url": "https://web.archive.org/web/20220608001455/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-RAT-and-Staging-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Unraveling the Long Thread of the Sony Attack. Retrieved February 25, 2016.",
+        "url": "https://web.archive.org/web/20160226161828/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Report.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+    "text": "Record context: Lazarus Group (G0032); Remote Desktop Protocol (T1021.001).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraCharlie uses RDP for propagation.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/001",
+    "record_id": "relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Novetta Blockbuster RATs",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Remote Administration Tools & Content Staging Malware Report. Retrieved March 16, 2016.",
+        "url": "https://web.archive.org/web/20220608001455/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-RAT-and-Staging-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Unraveling the Long Thread of the Sony Attack. Retrieved February 25, 2016.",
+        "url": "https://web.archive.org/web/20160226161828/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Report.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--e6cafa6a-22ce-49f7-8136-dc5a51c3aaeb",
+    "text": "Record context: Lazarus Group (G0032); SMB/Windows Admin Shares (T1021.002).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa accesses the <code>ADMIN$</code> share via SMB to conduct lateral movement.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/002",
+    "record_id": "relationship--e6cafa6a-22ce-49f7-8136-dc5a51c3aaeb",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Novetta Blockbuster RATs",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Remote Administration Tools & Content Staging Malware Report. Retrieved March 16, 2016.",
+        "url": "https://web.archive.org/web/20220608001455/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-RAT-and-Staging-Report.pdf"
+      },
+      {
+        "source_name": "Novetta Blockbuster",
+        "description": "Novetta Threat Research Group. (2016, February 24). Operation Blockbuster: Unraveling the Long Thread of the Sony Attack. Retrieved February 25, 2016.",
+        "url": "https://web.archive.org/web/20160226161828/https://www.operationblockbuster.com/wp-content/uploads/2016/02/Operation-Blockbuster-Report.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--935ca61c-b4ff-4cfc-a4e9-9b8aa9514ea3",
+    "text": "Record context: Privileged Account Management (M1026); SMB/Windows Admin Shares (T1021.002).\n\nDeny remote use of local admin credentials to log into systems. Do not allow domain user accounts to be in the local Administrators group multiple systems.",
+    "source_url": "https://attack.mitre.org/techniques/T1021/002",
+    "record_id": "relationship--935ca61c-b4ff-4cfc-a4e9-9b8aa9514ea3",
+    "release": "19.2",
+    "references": [],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+    "text": "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)",
+    "source_url": "https://attack.mitre.org/software/S9035",
+    "record_id": "relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Nov AI Threat Tracker",
+        "description": "Google Threat Intelligence Group. (2025, November 5). GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools. Retrieved March 31, 2026.",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools"
+      },
+      {
+        "source_name": "Cato LAMEHUG JUL 2025",
+        "description": "Simonovich, V. (2025, July 23). Cato CTRL™ Threat Research: Analyzing LAMEHUG – First Known LLM-Powered Malware with Links to APT28 (Fancy Bear) . Retrieved April 21, 2026.",
+        "url": "https://www.catonetworks.com/blog/cato-ctrl-threat-research-analyzing-lamehug/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f",
+    "text": "Record context: LAMEHUG (S9035); Data from Local System (T1005).\n\n[LAMEHUG](https://attack.mitre.org/software/S9035) has the ability to collect system information and files of interest from compromised systems.(Citation: Splunk LAMEHUG SEP 2025)(Citation: Nov AI Threat Tracker)",
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "record_id": "relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Splunk LAMEHUG SEP 2025",
+        "description": "Conteras, T., Splunk Research Team. (2025, September 25). From Prompt to Payload: LAMEHUG’s LLM-Driven Cyber Intrusion. Retrieved April 21, 2026.",
+        "url": "https://www.splunk.com/en_us/blog/security/lamehug-ai-driven-malware-llm-cyber-intrusion-analysis.html"
+      },
+      {
+        "source_name": "Nov AI Threat Tracker",
+        "description": "Google Threat Intelligence Group. (2025, November 5). GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools. Retrieved March 31, 2026.",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+    "text": "Record context: Lazarus Group (G0032); MagicRAT (S1182).\n\n[MagicRAT](https://attack.mitre.org/software/S1182) is exclusively associated with [Lazarus Group](https://attack.mitre.org/groups/G0032) operations in 2022.(Citation: Cisco MagicRAT 2022)",
+    "source_url": "https://attack.mitre.org/software/S1182",
+    "record_id": "relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cisco MagicRAT 2022",
+        "description": "Asheer Malhotra, Vitor Ventura & Jungsoo An, Cisco Talos. (2022, September 7). MagicRAT: Lazarus’ latest gateway into victim networks. Retrieved December 30, 2024.",
+        "url": "https://blog.talosintelligence.com/lazarus-magicrat/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--79c99261-dae6-4cd8-90b3-bf60fd57d5c9",
+    "text": "Record context: MagicRAT (S1182); System Network Configuration Discovery (T1016).\n\n[MagicRAT](https://attack.mitre.org/software/S1182) collects system network information using commands such as `ipconfig /all`.(Citation: Cisco MagicRAT 2022)",
+    "source_url": "https://attack.mitre.org/techniques/T1016",
+    "record_id": "relationship--79c99261-dae6-4cd8-90b3-bf60fd57d5c9",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cisco MagicRAT 2022",
+        "description": "Asheer Malhotra, Vitor Ventura & Jungsoo An, Cisco Talos. (2022, September 7). MagicRAT: Lazarus’ latest gateway into victim networks. Retrieved December 30, 2024.",
+        "url": "https://blog.talosintelligence.com/lazarus-magicrat/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+    "text": "Record context: APT28 (G0007); Rootkit (T1014).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used a UEFI (Unified Extensible Firmware Interface) rootkit known as [LoJax](https://attack.mitre.org/software/S0397).(Citation: Symantec APT28 Oct 2018)(Citation: ESET LoJax Sept 2018)",
+    "source_url": "https://attack.mitre.org/techniques/T1014",
+    "record_id": "relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Symantec APT28 Oct 2018",
+        "description": "Symantec Security Response. (2018, October 04). APT28: New Espionage Operations Target Military and Government Organizations. Retrieved November 14, 2018.",
+        "url": "https://www.symantec.com/blogs/election-security/apt28-espionage-military-government"
+      },
+      {
+        "source_name": "ESET LoJax Sept 2018",
+        "description": "ESET. (2018, September). LOJAX First UEFI rootkit found in the wild, courtesy of the Sednit group. Retrieved July 2, 2019.",
+        "url": "https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--fe028d0f-b02e-4856-8593-c71a07b9519b",
+    "text": "Record context: APT28 (G0007); SMB/Windows Admin Shares (T1021.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has mapped network drives using [Net](https://attack.mitre.org/software/S0039) and administrator credentials.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1021/002",
+    "record_id": "relationship--fe028d0f-b02e-4856-8593-c71a07b9519b",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--78e8d9e6-48b7-473f-af94-43f626de7931",
+    "text": "Record context: APT28 (G0007); Data from Removable Media (T1025).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) backdoor may collect the entire contents of an inserted USB device.(Citation: Microsoft SIR Vol 19)",
+    "source_url": "https://attack.mitre.org/techniques/T1025",
+    "record_id": "relationship--78e8d9e6-48b7-473f-af94-43f626de7931",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Microsoft SIR Vol 19",
+        "description": "Anthe, C. et al. (2015, October 19). Microsoft Security Intelligence Report Volume 19. Retrieved December 23, 2015.",
+        "url": "http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--1b143de7-af2d-4991-9e2e-aa85a8d7d330",
+    "text": "Record context: APT28 (G0007); Encrypted/Encoded File (T1027.013).\n\n[APT28](https://attack.mitre.org/groups/G0007) encrypted a .dll payload using RTL and a custom encryption algorithm. [APT28](https://attack.mitre.org/groups/G0007) has also obfuscated payloads with base64, XOR, and RC4.(Citation: Bitdefender APT28 Dec 2015)(Citation: Unit 42 Sofacy Feb 2018)(Citation: Palo Alto Sofacy 06-2018)(Citation: Talos Seduploader Oct 2017)(Citation: Accenture SNAKEMACKEREL Nov 2018)",
+    "source_url": "https://attack.mitre.org/techniques/T1027/013",
+    "record_id": "relationship--1b143de7-af2d-4991-9e2e-aa85a8d7d330",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Accenture SNAKEMACKEREL Nov 2018",
+        "description": "Accenture Security. (2018, November 29). SNAKEMACKEREL. Retrieved April 15, 2019.",
+        "url": "https://www.accenture.com/t20181129T203820Z__w__/us-en/_acnmedia/PDF-90/Accenture-snakemackerel-delivers-zekapab-malware.pdf#zoom=50"
+      },
+      {
+        "source_name": "Bitdefender APT28 Dec 2015",
+        "description": "Bitdefender. (2015, December). APT28 Under the Scope. Retrieved February 23, 2017.",
+        "url": "https://download.bitdefender.com/resources/media/materials/white-papers/en/Bitdefender_In-depth_analysis_of_APT28%E2%80%93The_Political_Cyber-Espionage.pdf"
+      },
+      {
+        "source_name": "Unit 42 Sofacy Feb 2018",
+        "description": "Lee, B, et al. (2018, February 28). Sofacy Attacks Multiple Government Entities. Retrieved March 15, 2018.",
+        "url": "https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/"
+      },
+      {
+        "source_name": "Palo Alto Sofacy 06-2018",
+        "description": "Lee, B., Falcone, R. (2018, June 06). Sofacy Group’s Parallel Attacks. Retrieved June 18, 2018.",
+        "url": "https://researchcenter.paloaltonetworks.com/2018/06/unit42-sofacy-groups-parallel-attacks/"
+      },
+      {
+        "source_name": "Talos Seduploader Oct 2017",
+        "description": "Mercer, W., et al. (2017, October 22). \"Cyber Conflict\" Decoy Document Used in Real Cyber Conflict. Retrieved November 2, 2018.",
+        "url": "https://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--b4c27a33-0669-4b10-a801-eb81e3563260",
+    "text": "Record context: APT28 (G0007); Data Transfer Size Limits (T1030).\n\n[APT28](https://attack.mitre.org/groups/G0007) has split archived exfiltration files into chunks smaller than 1MB.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1030",
+    "record_id": "relationship--b4c27a33-0669-4b10-a801-eb81e3563260",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--a292f2c5-a071-424e-b8b8-03d195c466ad",
+    "text": "Record context: APT28 (G0007); Masquerading (T1036).\n\n[APT28](https://attack.mitre.org/groups/G0007) has renamed the WinRAR utility to avoid detection.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1036",
+    "record_id": "relationship--a292f2c5-a071-424e-b8b8-03d195c466ad",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--6a1ddd06-a5bd-440b-aa19-285e7370477c",
+    "text": "Record context: APT28 (G0007); Match Legitimate Resource Name or Location (T1036.005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has changed extensions on files containing exfiltrated data to make them appear benign, and renamed a web shell instance to appear as a legitimate OWA page.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1036/005",
+    "record_id": "relationship--6a1ddd06-a5bd-440b-aa19-285e7370477c",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--237d098d-f796-49a0-bdc8-61909cd74feb",
+    "text": "Record context: APT28 (G0007); Logon Script (Windows) (T1037.001).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan adds the Registry key <code>HKCU\\Environment\\UserInitMprLogonScript</code> to establish persistence.(Citation: Unit 42 Playbook Dec 2017)",
+    "source_url": "https://attack.mitre.org/techniques/T1037/001",
+    "record_id": "relationship--237d098d-f796-49a0-bdc8-61909cd74feb",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Unit 42 Playbook Dec 2017",
+        "description": "Unit 42. (2017, December 15). Unit 42 Playbook Viewer. Retrieved December 20, 2017.",
+        "url": "https://web.archive.org/web/20230702043312/https://pan-unit42.github.io/playbook_viewer/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+    "text": "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1039",
+    "record_id": "relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+    "text": "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+    "source_url": "https://attack.mitre.org/techniques/T1040",
+    "record_id": "relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "US District Court Indictment GRU Oct 2018",
+        "description": "Brady, S . (2018, October 3). Indictment - United States vs Aleksei Sergeyevich Morenets, et al.. Retrieved October 1, 2020.",
+        "url": "https://www.justice.gov/opa/page/file/1098481/download"
+      },
+      {
+        "source_name": "FireEye APT28",
+        "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA’S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+        "url": "https://web.archive.org/web/20151022204649/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf"
+      },
+      {
+        "source_name": "FireEye APT28 Hospitality Aug 2017",
+        "description": "Smith, L. and Read, B.. (2017, August 11). APT28 Targets Hospitality Sector, Presents Threat to Travelers. Retrieved November 17, 2024.",
+        "url": "https://web.archive.org/web/20171202185937/https://www.fireeye.com/blog/threat-research/2017/08/apt28-targets-hospitality-sector.html"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+    "text": "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1048/002",
+    "record_id": "relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--2d450e2f-25c9-49af-b83f-6c91029ed28a",
+    "text": "Record context: APT28 (G0007); Keylogging (T1056.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used tools to perform keylogging.(Citation: Microsoft SIR Vol 19)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm Dec 2020)",
+    "source_url": "https://attack.mitre.org/techniques/T1056/001",
+    "record_id": "relationship--2d450e2f-25c9-49af-b83f-6c91029ed28a",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Microsoft SIR Vol 19",
+        "description": "Anthe, C. et al. (2015, October 19). Microsoft Security Intelligence Report Volume 19. Retrieved December 23, 2015.",
+        "url": "http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf"
+      },
+      {
+        "source_name": "TrendMicro Pawn Storm Dec 2020",
+        "description": "Hacquebord, F., Remorin, L. (2020, December 17). Pawn Storm’s Lack of Sophistication as a Strategy. Retrieved January 13, 2021.",
+        "url": "https://www.trendmicro.com/en_us/research/20/l/pawn-storm-lack-of-sophistication-as-a-strategy.html"
+      },
+      {
+        "source_name": "DOJ GRU Indictment Jul 2018",
+        "description": "Mueller, R. (2018, July 13). Indictment - United States of America vs. VIKTOR BORISOVICH NETYKSHO, et al. Retrieved November 17, 2024.",
+        "url": "https://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49",
+    "text": "Record context: APT28 (G0007); Process Discovery (T1057).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.(Citation: Unit 42 Playbook Dec 2017)",
+    "source_url": "https://attack.mitre.org/techniques/T1057",
+    "record_id": "relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Unit 42 Playbook Dec 2017",
+        "description": "Unit 42. (2017, December 15). Unit 42 Playbook Viewer. Retrieved December 20, 2017.",
+        "url": "https://web.archive.org/web/20230702043312/https://pan-unit42.github.io/playbook_viewer/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--16e90509-5ea2-48ff-8e09-686dcfddbb3b",
+    "text": "Record context: APT28 (G0007); PowerShell (T1059.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) downloads and executes PowerShell scripts and performs PowerShell commands.(Citation: Palo Alto Sofacy 06-2018)(Citation: TrendMicro Pawn Storm Dec 2020)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1059/001",
+    "record_id": "relationship--16e90509-5ea2-48ff-8e09-686dcfddbb3b",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Palo Alto Sofacy 06-2018",
+        "description": "Lee, B., Falcone, R. (2018, June 06). Sofacy Group’s Parallel Attacks. Retrieved June 18, 2018.",
+        "url": "https://researchcenter.paloaltonetworks.com/2018/06/unit42-sofacy-groups-parallel-attacks/"
+      },
+      {
+        "source_name": "TrendMicro Pawn Storm Dec 2020",
+        "description": "Hacquebord, F., Remorin, L. (2020, December 17). Pawn Storm’s Lack of Sophistication as a Strategy. Retrieved January 13, 2021.",
+        "url": "https://www.trendmicro.com/en_us/research/20/l/pawn-storm-lack-of-sophistication-as-a-strategy.html"
+      },
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--5799308b-e710-40b8-ad64-2b7916673560",
+    "text": "Record context: APT28 (G0007); Windows Command Shell (T1059.003).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan uses a cmd.exe and batch script to run its payload.(Citation: Unit 42 Playbook Dec 2017) The group has also used macros to execute payloads.(Citation: Talos Seduploader Oct 2017)(Citation: Unit42 Cannon Nov 2018)(Citation: Accenture SNAKEMACKEREL Nov 2018)(Citation: TrendMicro Pawn Storm Dec 2020)",
+    "source_url": "https://attack.mitre.org/techniques/T1059/003",
+    "record_id": "relationship--5799308b-e710-40b8-ad64-2b7916673560",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Accenture SNAKEMACKEREL Nov 2018",
+        "description": "Accenture Security. (2018, November 29). SNAKEMACKEREL. Retrieved April 15, 2019.",
+        "url": "https://www.accenture.com/t20181129T203820Z__w__/us-en/_acnmedia/PDF-90/Accenture-snakemackerel-delivers-zekapab-malware.pdf#zoom=50"
+      },
+      {
+        "source_name": "Unit42 Cannon Nov 2018",
+        "description": "Falcone, R., Lee, B. (2018, November 20). Sofacy Continues Global Attacks and Wheels Out New ‘Cannon’ Trojan. Retrieved November 26, 2018.",
+        "url": "https://researchcenter.paloaltonetworks.com/2018/11/unit42-sofacy-continues-global-attacks-wheels-new-cannon-trojan/"
+      },
+      {
+        "source_name": "TrendMicro Pawn Storm Dec 2020",
+        "description": "Hacquebord, F., Remorin, L. (2020, December 17). Pawn Storm’s Lack of Sophistication as a Strategy. Retrieved January 13, 2021.",
+        "url": "https://www.trendmicro.com/en_us/research/20/l/pawn-storm-lack-of-sophistication-as-a-strategy.html"
+      },
+      {
+        "source_name": "Talos Seduploader Oct 2017",
+        "description": "Mercer, W., et al. (2017, October 22). \"Cyber Conflict\" Decoy Document Used in Real Cyber Conflict. Retrieved November 2, 2018.",
+        "url": "https://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
+      },
+      {
+        "source_name": "Unit 42 Playbook Dec 2017",
+        "description": "Unit 42. (2017, December 15). Unit 42 Playbook Viewer. Retrieved December 20, 2017.",
+        "url": "https://web.archive.org/web/20230702043312/https://pan-unit42.github.io/playbook_viewer/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--cce31baa-5862-4df5-806f-15aaa7410fa5",
+    "text": "Record context: APT28 (G0007); Exploitation for Privilege Escalation (T1068).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exploited CVE-2014-4076, CVE-2015-2387, CVE-2015-1701, CVE-2017-0263, and CVE-2022-38028 to escalate privileges.(Citation: Bitdefender APT28 Dec 2015)(Citation: Microsoft SIR Vol 19)(Citation: Securelist Sofacy Feb 2018)(Citation: Nearest Neighbor Volexity)",
+    "source_url": "https://attack.mitre.org/techniques/T1068",
+    "record_id": "relationship--cce31baa-5862-4df5-806f-15aaa7410fa5",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Microsoft SIR Vol 19",
+        "description": "Anthe, C. et al. (2015, October 19). Microsoft Security Intelligence Report Volume 19. Retrieved December 23, 2015.",
+        "url": "http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf"
+      },
+      {
+        "source_name": "Bitdefender APT28 Dec 2015",
+        "description": "Bitdefender. (2015, December). APT28 Under the Scope. Retrieved February 23, 2017.",
+        "url": "https://download.bitdefender.com/resources/media/materials/white-papers/en/Bitdefender_In-depth_analysis_of_APT28%E2%80%93The_Political_Cyber-Espionage.pdf"
+      },
+      {
+        "source_name": "Securelist Sofacy Feb 2018",
+        "description": "Kaspersky Lab's Global Research & Analysis Team. (2018, February 20). A Slice of 2017 Sofacy Activity. Retrieved November 27, 2018.",
+        "url": "https://securelist.com/a-slice-of-2017-sofacy-activity/83930/"
+      },
+      {
+        "source_name": "Nearest Neighbor Volexity",
+        "description": "Koessel, Sean. Adair, Steven. Lancaster, Tom. (2024, November 22). The Nearest Neighbor Attack: How A Russian APT Weaponized Nearby Wi-Fi Networks for Covert Access. Retrieved February 25, 2025.",
+        "url": "https://www.volexity.com/blog/2024/11/22/the-nearest-neighbor-attack-how-a-russian-apt-weaponized-nearby-wi-fi-networks-for-covert-access/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1",
+    "text": "Record context: APT28 (G0007); File Deletion (T1070.004).\n\n[APT28](https://attack.mitre.org/groups/G0007) has intentionally deleted computer files to cover their tracks, including with use of the program CCleaner.(Citation: DOJ GRU Indictment Jul 2018)",
+    "source_url": "https://attack.mitre.org/techniques/T1070/004",
+    "record_id": "relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "DOJ GRU Indictment Jul 2018",
+        "description": "Mueller, R. (2018, July 13). Indictment - United States of America vs. VIKTOR BORISOVICH NETYKSHO, et al. Retrieved November 17, 2024.",
+        "url": "https://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--1036833a-1d4c-4d9e-b716-1e52606ab684",
+    "text": "Record context: APT28 (G0007); Timestomp (T1070.006).\n\n[APT28](https://attack.mitre.org/groups/G0007) has performed timestomping on victim files.(Citation: Crowdstrike DNC June 2016)",
+    "source_url": "https://attack.mitre.org/techniques/T1070/006",
+    "record_id": "relationship--1036833a-1d4c-4d9e-b716-1e52606ab684",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Crowdstrike DNC June 2016",
+        "description": "Alperovitch, D.. (2016, June 15). Bears in the Midst: Intrusion into the Democratic National Committee. Retrieved August 3, 2016.",
+        "url": "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+    "text": "Record context: APT28 (G0007); Web Protocols (T1071.001).\n\nLater implants used by [APT28](https://attack.mitre.org/groups/G0007), such as [CHOPSTICK](https://attack.mitre.org/software/S0023), use a blend of HTTP, HTTPS, and other legitimate channels for C2, depending on module configuration.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1071/001",
+    "record_id": "relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "FireEye APT28",
+        "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA’S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+        "url": "https://web.archive.org/web/20151022204649/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf"
+      },
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--a1fe7df1-7c20-422e-8e86-042cd11b3501",
+    "text": "Record context: APT28 (G0007); Mail Protocols (T1071.003).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used IMAP, POP3, and SMTP for a communication channel in various implants, including using self-registered Google Mail accounts and later compromised email servers of its victims.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+    "source_url": "https://attack.mitre.org/techniques/T1071/003",
+    "record_id": "relationship--a1fe7df1-7c20-422e-8e86-042cd11b3501",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "FireEye APT28",
+        "description": "FireEye. (2015). APT28: A WINDOW INTO RUSSIA’S CYBER ESPIONAGE OPERATIONS?. Retrieved August 19, 2015.",
+        "url": "https://web.archive.org/web/20151022204649/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf"
+      },
+      {
+        "source_name": "Cybersecurity Advisory GRU Brute Force Campaign July 2021",
+        "description": "NSA, CISA, FBI, NCSC. (2021, July). Russian GRU Conducting Global Brute Force Campaign to Compromise Enterprise and Cloud Environments. Retrieved July 26, 2021.",
+        "url": "https://media.defense.gov/2021/Jul/01/2002753896/-1/-1/1/CSA_GRU_GLOBAL_BRUTE_FORCE_CAMPAIGN_UOO158036-21.PDF"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  },
+  {
+    "document_id": "attack19.2:relationship--ec6a8fde-702a-4e38-a37b-428a8ca10b18",
+    "text": "Record context: APT28 (G0007); Local Data Staging (T1074.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) has stored captured credential information in a file named pi.log.(Citation: Microsoft SIR Vol 19)",
+    "source_url": "https://attack.mitre.org/techniques/T1074/001",
+    "record_id": "relationship--ec6a8fde-702a-4e38-a37b-428a8ca10b18",
+    "release": "19.2",
+    "references": [
+      {
+        "source_name": "Microsoft SIR Vol 19",
+        "description": "Anthe, C. et al. (2015, October 19). Microsoft Security Intelligence Report Volume 19. Retrieved December 23, 2015.",
+        "url": "http://download.microsoft.com/download/4/4/C/44CDEF0E-7924-4787-A56A-16261691ACE3/Microsoft_Security_Intelligence_Report_Volume_19_English.pdf"
+      }
+    ],
+    "kind": "ATT&CK relationship narrative"
+  }
+]

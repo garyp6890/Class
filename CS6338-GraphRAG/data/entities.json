@@ -1,0 +1,455 @@
+[
+  {
+    "id": "G0016",
+    "name": "APT29",
+    "entity_type": "ThreatGroup",
+    "aliases": [
+      "APT29",
+      "IRON RITUAL",
+      "IRON HEMLOCK",
+      "NobleBaron",
+      "Dark Halo",
+      "NOBELIUM",
+      "UNC2452",
+      "YTTRIUM",
+      "The Dukes",
+      "Cozy Bear",
+      "CozyDuke",
+      "SolarStorm",
+      "Blue Kitsune",
+      "UNC3524",
+      "Midnight Blizzard"
+    ],
+    "source_url": "https://attack.mitre.org/groups/G0016",
+    "software_type": null
+  },
+  {
+    "id": "T1003.002",
+    "name": "Security Account Manager",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1003/002",
+    "software_type": null
+  },
+  {
+    "id": "M1017",
+    "name": "User Training",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1017",
+    "software_type": null
+  },
+  {
+    "id": "T1003.004",
+    "name": "LSA Secrets",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1003/004",
+    "software_type": null
+  },
+  {
+    "id": "T1005",
+    "name": "Data from Local System",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1005",
+    "software_type": null
+  },
+  {
+    "id": "M1057",
+    "name": "Data Loss Prevention",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1057",
+    "software_type": null
+  },
+  {
+    "id": "T1021.007",
+    "name": "Cloud Services",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1021/007",
+    "software_type": null
+  },
+  {
+    "id": "M1026",
+    "name": "Privileged Account Management",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1026",
+    "software_type": null
+  },
+  {
+    "id": "T1027.002",
+    "name": "Software Packing",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1027/002",
+    "software_type": null
+  },
+  {
+    "id": "M1049",
+    "name": "Antivirus/Antimalware",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1049",
+    "software_type": null
+  },
+  {
+    "id": "G0007",
+    "name": "APT28",
+    "entity_type": "ThreatGroup",
+    "aliases": [
+      "APT28",
+      "IRON TWILIGHT",
+      "SNAKEMACKEREL",
+      "Swallowtail",
+      "Group 74",
+      "Sednit",
+      "Sofacy",
+      "Pawn Storm",
+      "Fancy Bear",
+      "STRONTIUM",
+      "Tsar Team",
+      "Threat Group-4127",
+      "TG-4127",
+      "Forest Blizzard",
+      "FROZENLAKE",
+      "GruesomeLarch"
+    ],
+    "source_url": "https://attack.mitre.org/groups/G0007",
+    "software_type": null
+  },
+  {
+    "id": "T1001.001",
+    "name": "Junk Data",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1001/001",
+    "software_type": null
+  },
+  {
+    "id": "M1031",
+    "name": "Network Intrusion Prevention",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1031",
+    "software_type": null
+  },
+  {
+    "id": "T1003",
+    "name": "OS Credential Dumping",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1003",
+    "software_type": null
+  },
+  {
+    "id": "M1015",
+    "name": "Active Directory Configuration",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1015",
+    "software_type": null
+  },
+  {
+    "id": "T1003.001",
+    "name": "LSASS Memory",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1003/001",
+    "software_type": null
+  },
+  {
+    "id": "T1003.003",
+    "name": "NTDS",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1003/003",
+    "software_type": null
+  },
+  {
+    "id": "G0046",
+    "name": "FIN7",
+    "entity_type": "ThreatGroup",
+    "aliases": [
+      "FIN7",
+      "GOLD NIAGARA",
+      "ITG14",
+      "Carbon Spider",
+      "ELBRUS",
+      "Sangria Tempest"
+    ],
+    "source_url": "https://attack.mitre.org/groups/G0046",
+    "software_type": null
+  },
+  {
+    "id": "T1008",
+    "name": "Fallback Channels",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1008",
+    "software_type": null
+  },
+  {
+    "id": "T1021.001",
+    "name": "Remote Desktop Protocol",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1021/001",
+    "software_type": null
+  },
+  {
+    "id": "M1018",
+    "name": "User Account Management",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1018",
+    "software_type": null
+  },
+  {
+    "id": "T1021.004",
+    "name": "SSH",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1021/004",
+    "software_type": null
+  },
+  {
+    "id": "T1021.005",
+    "name": "VNC",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1021/005",
+    "software_type": null
+  },
+  {
+    "id": "M1033",
+    "name": "Limit Software Installation",
+    "entity_type": "Mitigation",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/mitigations/M1033",
+    "software_type": null
+  },
+  {
+    "id": "G0032",
+    "name": "Lazarus Group",
+    "entity_type": "ThreatGroup",
+    "aliases": [
+      "Lazarus Group",
+      "Labyrinth Chollima",
+      "HIDDEN COBRA",
+      "Guardians of Peace",
+      "ZINC",
+      "NICKEL ACADEMY",
+      "Diamond Sleet"
+    ],
+    "source_url": "https://attack.mitre.org/groups/G0032",
+    "software_type": null
+  },
+  {
+    "id": "T1001.003",
+    "name": "Protocol or Service Impersonation",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1001/003",
+    "software_type": null
+  },
+  {
+    "id": "T1021.002",
+    "name": "SMB/Windows Admin Shares",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1021/002",
+    "software_type": null
+  },
+  {
+    "id": "S9035",
+    "name": "LAMEHUG",
+    "entity_type": "Software",
+    "aliases": [
+      "LAMEHUG",
+      "PROMPTSTEAL"
+    ],
+    "source_url": "https://attack.mitre.org/software/S9035",
+    "software_type": "malware"
+  },
+  {
+    "id": "S1182",
+    "name": "MagicRAT",
+    "entity_type": "Software",
+    "aliases": [
+      "MagicRAT"
+    ],
+    "source_url": "https://attack.mitre.org/software/S1182",
+    "software_type": "malware"
+  },
+  {
+    "id": "T1016",
+    "name": "System Network Configuration Discovery",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1016",
+    "software_type": null
+  },
+  {
+    "id": "T1014",
+    "name": "Rootkit",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1014",
+    "software_type": null
+  },
+  {
+    "id": "T1025",
+    "name": "Data from Removable Media",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1025",
+    "software_type": null
+  },
+  {
+    "id": "T1027.013",
+    "name": "Encrypted/Encoded File",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1027/013",
+    "software_type": null
+  },
+  {
+    "id": "T1030",
+    "name": "Data Transfer Size Limits",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1030",
+    "software_type": null
+  },
+  {
+    "id": "T1036",
+    "name": "Masquerading",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1036",
+    "software_type": null
+  },
+  {
+    "id": "T1036.005",
+    "name": "Match Legitimate Resource Name or Location",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1036/005",
+    "software_type": null
+  },
+  {
+    "id": "T1037.001",
+    "name": "Logon Script (Windows)",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1037/001",
+    "software_type": null
+  },
+  {
+    "id": "T1039",
+    "name": "Data from Network Shared Drive",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1039",
+    "software_type": null
+  },
+  {
+    "id": "T1040",
+    "name": "Network Sniffing",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1040",
+    "software_type": null
+  },
+  {
+    "id": "T1048.002",
+    "name": "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1048/002",
+    "software_type": null
+  },
+  {
+    "id": "T1056.001",
+    "name": "Keylogging",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1056/001",
+    "software_type": null
+  },
+  {
+    "id": "T1057",
+    "name": "Process Discovery",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1057",
+    "software_type": null
+  },
+  {
+    "id": "T1059.001",
+    "name": "PowerShell",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1059/001",
+    "software_type": null
+  },
+  {
+    "id": "T1059.003",
+    "name": "Windows Command Shell",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1059/003",
+    "software_type": null
+  },
+  {
+    "id": "T1068",
+    "name": "Exploitation for Privilege Escalation",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1068",
+    "software_type": null
+  },
+  {
+    "id": "T1070.004",
+    "name": "File Deletion",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1070/004",
+    "software_type": null
+  },
+  {
+    "id": "T1070.006",
+    "name": "Timestomp",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1070/006",
+    "software_type": null
+  },
+  {
+    "id": "T1071.001",
+    "name": "Web Protocols",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1071/001",
+    "software_type": null
+  },
+  {
+    "id": "T1071.003",
+    "name": "Mail Protocols",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1071/003",
+    "software_type": null
+  },
+  {
+    "id": "T1074.001",
+    "name": "Local Data Staging",
+    "entity_type": "Technique",
+    "aliases": [],
+    "source_url": "https://attack.mitre.org/techniques/T1074/001",
+    "software_type": null
+  }
+]
