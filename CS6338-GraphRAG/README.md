@@ -2,99 +2,85 @@
 
 Garyad Passmore | CS 6338 Knowledge Engineering | Dr. Erdogan Dogdu
 
-Design checkpoint for the Cyber Threat Intelligence GraphRAG Assistant for Incident Response.
-The report describes the intended complete system. This checkpoint implements the models,
-parser, resolver, chunker, extraction adapter, ingestion functions, schema initialization,
-embedding helpers, retrieval primitives and evaluation scripts. The end-to-end QA engine and
-frontend are still to be connected. `/query` returns HTTP 503 until an engine is supplied.
-No extraction accuracy, RAGAS score, latency result or external benchmark score is claimed.
+Design and code checkpoint for the **Cyber Threat Intelligence GraphRAG Assistant for Incident Response**.
+Read the [10-page design report](report/Passmore_GraphRAG_DesignDoc.pdf) for the architecture and evaluation plan.
 
-## Quick check (Python 3.11+)
+## Assignment deliverables
+
+| Deliverable | Location |
+| --- | --- |
+| Database schema and initialization | [schema.cypher](schema.cypher), [init_db.py](init_db.py) |
+| Extraction prompt and strict parser | [prompts/extract.txt](prompts/extract.txt), [parser.py](parser.py) |
+| 60 reference triples | [data/gold_triples.json](data/gold_triples.json) |
+| 22 two-hop QA pairs | [data/eval_queries.json](data/eval_queries.json) |
+| Source narratives and entity catalog | [data/documents.json](data/documents.json), [data/entities.json](data/entities.json) |
+
+## What is implemented
+
+- Pydantic data models, chunking, alias resolution and extraction validation.
+- Ollama extraction adapter, Neo4j schema/ingestion functions and inverse-rule query.
+- Text embedding and Node2Vec helpers, bounded retrieval templates and rank fusion.
+- Reference-data validation, exact-triple scoring and a RAGAS evaluation adapter.
+
+The 12 unit tests pass. These checks cover parser rejection cases, confidence boundaries,
+alias collisions, chunk offsets, scoring, request limits, fusion and reference integrity.
+Live Neo4j/model integration and end-to-end performance have not been verified.
+
+## What is stubbed or planned
+
+The QA engine and Streamlit frontend still need to be connected. `api.py` defines the
+interface; `/health` reports `design_checkpoint` and `/query` returns HTTP 503 until an
+engine is supplied. No extraction accuracy, RAGAS score or latency result is claimed.
+
+## Run the checkpoint tests
+
+From this `CS6338-GraphRAG` folder, with Python 3.11+:
 
 ```powershell
 python -m venv .venv
 .venv/Scripts/Activate.ps1
-python -m pip install -r requirements.txt
+python -m pip install "pydantic>=2.8,<3"
 python -m unittest discover -s tests -v
 python validate_benchmark.py
 ```
 
-The tests exercise invalid directions, fabricated evidence, unknown IDs, extra fields,
-confidence boundaries, alias collisions, offsets, metric behavior, retrieval fusion,
-request limits and source/path integrity. Passing them does not establish semantic accuracy.
+These tests do not require Neo4j, Ollama or downloaded model weights.
+For implementation work, install `requirements.txt`. Use a dedicated Neo4j 5.26 database;
+set `NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD` and `NEO4J_DATABASE`, then run `python init_db.py`.
+The planned local models are `llama3.1:8b` and `nomic-embed-text:v1.5`.
 
-## Database and models
+## Benchmark scope and review
 
-Install Neo4j 5.26 with a dedicated empty project database. Set `NEO4J_URI`, `NEO4J_USER`,
-`NEO4J_PASSWORD` and `NEO4J_DATABASE` in the local environment, then run `python init_db.py`.
-Do not commit credentials. `schema.cypher` is idempotent and inserts no benchmark edges.
-Use `ingest.ingest` inside `session.execute_write` with a GraphChunk, raw response and
-the identity catalog. Only accepted, validated relations become assertions/edges.
+The frozen ATT&CK 19.2 subset contains 60 narrative records, 50 entities and 60 reference
+triples (12 development / 48 extraction test). The 22 QA pairs contain 20 test and two
+development questions. See [dataset notes](data/dataset_info.json) and the
+[annotation review worksheet](data/annotation_review.csv).
 
-```powershell
-ollama pull llama3.1:8b
-ollama pull nomic-embed-text:v1.5
-uvicorn api:app --host 127.0.0.1 --port 8000
-```
+Labels come from official STIX and pass structural checks; student review of textual
+entailment remains pending. In `gold-038`, the official USES label is stronger than the
+MagicRAT/Lazarus narrative's association wording. Preserve and adjudicate this discrepancy.
+The questions are narrow and template-based, and splits may share entities/source records.
+Gold labels and reference answers must remain outside the extraction and retrieval inputs.
 
-`extract.extract(chunk, catalog)` calls Ollama with JSON Schema and two repair attempts.
-It does not load STIX relationship labels or gold answers. The provided extraction input
-is `data/documents.json`; `data/entities.json` provides identity/type/alias context.
-`embeddings.py` rejects overlength text rather than silently truncating it. Keep chunk
-boundaries/IDs stable if a rejected input is split and reprocessed.
+## Remaining work for the final milestone
 
-## Benchmark
+1. Review the reference annotations and resolve ambiguous labels before freezing the benchmark.
+2. Run extraction, retain errors/review decisions, and verify Neo4j ingestion and vector indexes.
+3. Connect retrieval, citation validation, answer generation and the frontend.
+4. Compare text-only, hybrid and hybrid-without-Node2Vec conditions on the frozen questions.
+5. Report triple P/R/F1, evidence retrieval, RAGAS, human ratings, latency and unsuccessful cases.
+6. Run CTIBench CTI-ATE as a separate external evaluation after the core experiment.
 
-The frozen ATT&CK 19.2 subset has 60 narrative records, 50 entities, 60 reference triples,
-and 22 two-hop QA pairs (20 test, 2 development). There are 12 development and 48 test
-extraction records. See `data/dataset_info.json` for the scope and limitations.
-Reference labels are derived from official STIX and checked for structural integrity;
-they still need student review of textual entailment. In particular, `gold-038` uses an
-official USES label whose narrative says MagicRAT is associated with Lazarus operations.
-Keep this disagreement visible during review; do not silently relabel it to improve scores.
-`data/annotation_review.csv` provides a review worksheet.
+Use `python evaluate_triples.py predictions.json --split test` for real extraction outputs.
+For RAGAS, use a separate environment with `requirements-eval.txt` and run
+`python evaluate_ragas.py responses.json`; each row needs `user_input`, `response`,
+`retrieved_contexts` and `reference`. The local judge configuration is described in the report.
 
-All 20 test questions require a group-to-technique link and a technique-to-mitigation link.
-The two development questions instead follow group-to-software-to-technique paths.
-These are deliberately bounded, in-corpus reference questions, not a broad incident-response
-benchmark. Entities and source records can overlap across question splits.
+## Related work and attribution
 
-To rebuild from the official full release: `python build_benchmark.py path/to/enterprise-attack-19.2.json`.
-Without a path, the script downloads that fixed release. Rebuilding resets review status.
+The report distinguishes peer-reviewed AttacKG, CTINexus and CTIBench from TRAM tooling
+and the newer CTI GraphRAG preprints. [Research sources](research_sources.json) retain the links.
+This project uses MITRE ATT&CK; see the [MITRE license](data/source/MITRE_LICENSE.txt)
+and [ATT&CK terms](https://attack.mitre.org/resources/terms-of-use/).
 
-## Evaluation after implementation
-
-Save accepted predictions as a JSON list containing document_id, source_id, predicate,
-target_id and evidence_text. Run `python evaluate_triples.py predictions.json --split test`.
-Scoring deduplicates exact directed tuples per document. Wrong direction is both FP and FN.
-Other-pair predictions in a scored record count as FP because this task targets its designated
-endpoint pair. Omitted/quarantined records remain FN. Report review/quarantine rates separately.
-
-For RAGAS, use a separate environment with `requirements-eval.txt`, pull `qwen2.5:14b`
-and `nomic-embed-text`, and run `python evaluate_ragas.py responses.json`.
-Each response row must contain user_input, response, retrieved_contexts (list of strings),
-and reference. Run separately for text-only and hybrid outputs; preserve query IDs alongside
-the files. Judge failures raise an error rather than being written as zero scores.
-The local 14B judge is a planned configuration, subject to available memory, not an executed run.
-
-## Related work and professor feedback
-
-The design report includes a targeted review of CTINexus, AttacKG, CTIBench, TRAM and recent
-CTI GraphRAG studies. CTI-ATE is the first proposed external test; its technique-ID F1 must
-be kept separate from this project's exact triple F1 and multi-hop QA scores. The broad idea
-of CTI GraphRAG is established; any paper contribution must depend on measured results and
-a more specific gap. Primary links and search limitations are listed in `research_sources.json`.
-
-## Checkpoint publication
-
-Repository checkpoint: https://github.com/garyp6890/Class/tree/main/CS6338-GraphRAG
-
-Submit this folder URL with `report/Passmore_GraphRAG_DesignDoc.pdf`.
-The ZIP is a convenience copy of the source and report.
-
-## Attribution
-
-This project uses MITRE ATT&CK. The source subset retains official record identifiers,
-descriptions and citations. See `data/source/MITRE_LICENSE.txt` and
-https://attack.mitre.org/resources/terms-of-use/ . Third-party reports cited by ATT&CK retain
-their own rights. Research references are cited, not redistributed as full papers here.
+Submission repository: https://github.com/garyp6890/Class/tree/main/CS6338-GraphRAG
