@@ -1,0 +1,33 @@
+{
+  "extraction_records": 60,
+  "benchmark": {
+    "42": {
+      "attempted": 60,
+      "errors": 0
+    },
+    "43": {
+      "attempted": 60,
+      "errors": 0
+    },
+    "44": {
+      "attempted": 60,
+      "errors": 0
+    }
+  },
+  "graph_vectors_128d": {
+    "42": 50,
+    "43": 50,
+    "44": 50
+  },
+  "judge_rows": 60,
+  "judge_seed": 42,
+  "tests_passed": 18,
+  "api_http_status": 200,
+  "report_pages": 9,
+  "slides": 11,
+  "deliverable_sha256": {
+    "Passmore_GraphRAG_DemoScript.txt": "d0edc6317c1ec8c81046c7e70f38c6d32f455c973991b8efd0b752efbf59e0f9",
+    "Passmore_GraphRAG_FinalReport.pdf": "00919deca143502e1a55d1db6a730d717c11e297da0a3300220520709dbf714e",
+    "Passmore_GraphRAG_FinalSlides.pptx": "fff624c2457c0a174680c015979f39ed35ff8b28401f7f13ca7f9406bed9e4c7"
+  }
+}

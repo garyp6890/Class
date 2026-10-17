@@ -1,0 +1,96 @@
+{
+  "id": "qa-21",
+  "response": {
+    "answer": "The technique that connects APT28 through LAMEHUG is Data from Local System (T1005).",
+    "status": "answered",
+    "citations": [
+      {
+        "citation_id": "C1",
+        "chunk_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+        "document_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+        "source_url": "https://attack.mitre.org/software/S9035",
+        "evidence_text": "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)"
+      },
+      {
+        "citation_id": "C2",
+        "chunk_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f:0",
+        "document_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f",
+        "source_url": "https://attack.mitre.org/techniques/T1005",
+        "evidence_text": "Record context: LAMEHUG (S9035); Data from Local System (T1005).\n\n[LAMEHUG](https://attack.mitre.org/software/S9035) has the ability to collect system information and files of interest from compromised systems.(Citation: Splunk LAMEHUG SEP 2025)(Citation: Nov AI Threat Tracker)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 3842.2923000180162,
+    "generated_at": "2026-10-17T03:04:37.841773Z"
+  },
+  "trace": {
+    "retrieval_ms": 3092.566800012719,
+    "contexts": [
+      {
+        "chunk_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+        "text": "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)",
+        "document_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+        "source_url": "https://attack.mitre.org/software/S9035"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f:0",
+        "text": "Record context: LAMEHUG (S9035); Data from Local System (T1005).\n\n[LAMEHUG](https://attack.mitre.org/software/S9035) has the ability to collect system information and files of interest from compromised systems.(Citation: Splunk LAMEHUG SEP 2025)(Citation: Nov AI Threat Tracker)",
+        "document_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f",
+        "source_url": "https://attack.mitre.org/techniques/T1005"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78:0",
+        "text": "Record context: APT28 (G0007); Web Protocols (T1071.001).\n\nLater implants used by [APT28](https://attack.mitre.org/groups/G0007), such as [CHOPSTICK](https://attack.mitre.org/software/S0023), use a blend of HTTP, HTTPS, and other legitimate channels for C2, depending on module configuration.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+        "document_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+        "source_url": "https://attack.mitre.org/techniques/T1071/001"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb:0",
+        "text": "Record context: APT28 (G0007); Rootkit (T1014).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used a UEFI (Unified Extensible Firmware Interface) rootkit known as [LoJax](https://attack.mitre.org/software/S0397).(Citation: Symantec APT28 Oct 2018)(Citation: ESET LoJax Sept 2018)",
+        "document_id": "attack19.2:relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+        "source_url": "https://attack.mitre.org/techniques/T1014"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+        "text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+        "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+        "source_url": "https://attack.mitre.org/techniques/T1003/001"
+      }
+    ],
+    "facts": [],
+    "anchors": [
+      "G0007",
+      "S9035"
+    ],
+    "raw": {
+      "model": "llama3.1:8b",
+      "created_at": "2026-10-17T03:04:37.8392011Z",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"answer\": \"The technique that connects APT28 through LAMEHUG is Data from Local System (T1005).\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"C1\", \"C2\"]\n}"
+      },
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 728148800,
+      "load_duration": 3349500,
+      "prompt_eval_count": 1122,
+      "prompt_eval_cached_count": 176,
+      "prompt_eval_duration": 265635000,
+      "eval_count": 53,
+      "eval_duration": 364908000
+    },
+    "seed": 42,
+    "citation_map": {
+      "C1": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+      "C2": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f:0",
+      "C3": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78:0",
+      "C4": "attack19.2:relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb:0",
+      "C5": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0"
+    },
+    "citation_ids_valid": true
+  }
+}

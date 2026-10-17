@@ -1,5 +1,5 @@
 __pycache__/
 .venv/
 .env
-*.pyc
-results/
+*.log
+results/*.tmp

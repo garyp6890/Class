@@ -1,7 +1,7 @@
 """Text embedding adapter and seeded Node2Vec walks. No gold-data loading."""
 import json,urllib.request,random,hashlib,math
 
-def text_embedding(text,is_query=False,base_url='http://localhost:11434'):
+def text_embedding(text,is_query=False,base_url='http://127.0.0.1:11434'):
     prefix='search_query: ' if is_query else 'search_document: '
     body={'model':'nomic-embed-text:v1.5','input':prefix+text,'truncate':False}
     req=urllib.request.Request(base_url+'/api/embed',data=json.dumps(body).encode(),

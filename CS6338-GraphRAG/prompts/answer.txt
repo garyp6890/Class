@@ -10,6 +10,10 @@ No evidence of a relation does not mean the relation is false. Do not present
 a mitigation association as a guarantee of prevention. Keep the answer within
 250 words. Return JSON with answer, status (answered or insufficient_evidence),
 and cited_chunk_ids. Cite only IDs present in this request.
+Chunk IDs in this request are short local labels such as C1 and C2. Cite them
+exactly as [C1] or [C2], and list the same labels in cited_chunk_ids. Do not use
+Markdown links, entity names, or source URLs inside citation brackets. The server
+maps these local labels back to immutable source chunk IDs.
 
 USER TEMPLATE
 QUESTION: {question}

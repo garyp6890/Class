@@ -1,0 +1,34 @@
+HUMAN REVIEW RUBRIC
+
+Review each saved answer alongside the question, reference answer, retrieved text,
+and graph facts. Reference labels are silver; note a disputed label rather than
+forcing agreement with it. Do not copy local-judge scores into human rating fields.
+
+Factuality (1-5)
+1: The main answer is incorrect or unsupported.
+2: Major factual errors remain despite some correct details.
+3: A mixture of supported and unsupported claims.
+4: The main answer is supported, with a minor factual error or qualification missing.
+5: All substantive claims are supported and appropriately qualified.
+
+Completeness (1-5)
+1: Does not address the question or required path.
+2: Omits most required links or evidence.
+3: Addresses part of the answer but leaves an important gap.
+4: Covers the main answer and path with a minor omission.
+5: Covers all required relationships, provenance, and uncertainty.
+
+Coherence (1-5)
+1: Unreadable, contradictory, or unrelated.
+2: Difficult to follow with major organization problems.
+3: Understandable but unclear in places.
+4: Clear, with a minor wording or organization issue.
+5: Clear, concise, logically connected, and easy to verify.
+
+An appropriate abstention can be factually sound even if it does not provide the
+reference answer. Judge completeness against the evidence actually available and
+note missing retrieval separately. A citation ID's existence is not sufficient:
+read its text and check whether it supports the corresponding assertion.
+
+Write short notes for scores below 4 and for any suspected reference-label problem.
+Do not claim a human evaluation has occurred until a person fills out the worksheet.

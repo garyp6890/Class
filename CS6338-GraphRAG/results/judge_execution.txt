@@ -1,0 +1,650 @@
+[
+  {
+    "seed": 42,
+    "mode": "text_only",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.675,
+    "path_id_coverage": 0.1,
+    "citation_id_validity": 1,
+    "abstention_rate": 0,
+    "retrieval_p95_ms": 67.20623501751106,
+    "total_p50_ms": 859.9131000082707,
+    "total_p95_ms": 1073.0269799925736
+  },
+  {
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.625,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 68.94883999484591,
+    "total_p50_ms": 1012.9914499993902,
+    "total_p95_ms": 1137.4779300007503
+  },
+  {
+    "seed": 42,
+    "mode": "hybrid",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.6,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 71.87272000883243,
+    "total_p50_ms": 903.8920500024687,
+    "total_p95_ms": 1039.6762149830465
+  },
+  {
+    "seed": 43,
+    "mode": "text_only",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.675,
+    "path_id_coverage": 0.1,
+    "citation_id_validity": 1,
+    "abstention_rate": 0,
+    "retrieval_p95_ms": 61.9620300232782,
+    "total_p50_ms": 818.6524999910034,
+    "total_p95_ms": 1069.7134900168749
+  },
+  {
+    "seed": 43,
+    "mode": "hybrid_without_node2vec",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.625,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 64.84383999049896,
+    "total_p50_ms": 917.4057000200264,
+    "total_p95_ms": 1117.8831850018469
+  },
+  {
+    "seed": 43,
+    "mode": "hybrid",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.6,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 65.32572501746472,
+    "total_p50_ms": 900.2402999904007,
+    "total_p95_ms": 1027.7610050150543
+  },
+  {
+    "seed": 44,
+    "mode": "text_only",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.675,
+    "path_id_coverage": 0.15,
+    "citation_id_validity": 1,
+    "abstention_rate": 0,
+    "retrieval_p95_ms": 62.67066000145861,
+    "total_p50_ms": 810.0652999855811,
+    "total_p95_ms": 968.1240050122143
+  },
+  {
+    "seed": 44,
+    "mode": "hybrid_without_node2vec",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.625,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 66.38020001410041,
+    "total_p50_ms": 895.7443999970565,
+    "total_p95_ms": 1133.6623449838953
+  },
+  {
+    "seed": 44,
+    "mode": "hybrid",
+    "attempted": 20,
+    "completed": 20,
+    "errors": 0,
+    "evidence_recall": 0.6,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 66.049130015017,
+    "total_p50_ms": 885.1460000005318,
+    "total_p95_ms": 1009.5407349857851
+  },
+  {
+    "seed": "pooled",
+    "mode": "text_only",
+    "attempted": 60,
+    "completed": 60,
+    "errors": 0,
+    "evidence_recall": 0.675,
+    "path_id_coverage": 0.11666666666666667,
+    "citation_id_validity": 1,
+    "abstention_rate": 0,
+    "retrieval_p95_ms": 63.873865015921176,
+    "total_p50_ms": 843.3583000150975,
+    "total_p95_ms": 1073.021674991469
+  },
+  {
+    "seed": "pooled",
+    "mode": "hybrid_without_node2vec",
+    "attempted": 60,
+    "completed": 60,
+    "errors": 0,
+    "evidence_recall": 0.625,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 66.38020001410041,
+    "total_p50_ms": 945.6945999991149,
+    "total_p95_ms": 1135.095230001025
+  },
+  {
+    "seed": "pooled",
+    "mode": "hybrid",
+    "attempted": 60,
+    "completed": 60,
+    "errors": 0,
+    "evidence_recall": 0.6,
+    "path_id_coverage": 0.4,
+    "citation_id_validity": 1,
+    "abstention_rate": 0.05,
+    "retrieval_p95_ms": 69.45506500487681,
+    "total_p50_ms": 893.8701999868499,
+    "total_p95_ms": 1039.6762149830465
+  }
+]
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:17<00:50, 17.00s/it]
+Evaluating:  50%|#####     | 2/4 [00:17<00:14,  7.43s/it]
+Evaluating:  75%|#######5  | 3/4 [00:20<00:05,  5.39s/it]
+Evaluating: 100%|##########| 4/4 [00:28<00:00,  6.17s/it]
+Evaluating: 100%|##########| 4/4 [00:28<00:00,  7.02s/it]
+RAGAS 1/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.01s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.44s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.54s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.74s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.11s/it]
+RAGAS 2/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:13,  4.60s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.33s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.64s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.74s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.71s/it]
+RAGAS 3/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.82s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.42s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.96s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.60s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.70s/it]
+RAGAS 4/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:09<00:27,  9.01s/it]
+Evaluating:  50%|#####     | 2/4 [00:09<00:08,  4.10s/it]
+Evaluating:  75%|#######5  | 3/4 [00:12<00:03,  3.72s/it]
+Evaluating: 100%|##########| 4/4 [00:25<00:00,  7.26s/it]
+Evaluating: 100%|##########| 4/4 [00:25<00:00,  6.40s/it]
+RAGAS 5/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.74s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.50s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.85s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.32s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.51s/it]
+RAGAS 6/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:12,  4.19s/it]
+Evaluating:  50%|#####     | 2/4 [00:04<00:04,  2.15s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.52s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.70s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  3.98s/it]
+RAGAS 7/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:07,  2.48s/it]
+Evaluating:  50%|#####     | 2/4 [00:03<00:02,  1.42s/it]
+Evaluating:  75%|#######5  | 3/4 [00:06<00:02,  2.14s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  4.17s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  3.36s/it]
+RAGAS 8/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:07,  2.44s/it]
+Evaluating:  50%|#####     | 2/4 [00:03<00:02,  1.41s/it]
+Evaluating:  75%|#######5  | 3/4 [00:06<00:02,  2.26s/it]
+Evaluating: 100%|##########| 4/4 [00:14<00:00,  4.39s/it]
+Evaluating: 100%|##########| 4/4 [00:14<00:00,  3.51s/it]
+RAGAS 9/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:07,  2.50s/it]
+Evaluating:  50%|#####     | 2/4 [00:03<00:02,  1.43s/it]
+Evaluating:  75%|#######5  | 3/4 [00:06<00:02,  2.23s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  4.29s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  3.45s/it]
+RAGAS 10/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:08<00:24,  8.10s/it]
+Evaluating:  50%|#####     | 2/4 [00:08<00:07,  3.76s/it]
+Evaluating:  75%|#######5  | 3/4 [00:12<00:03,  3.50s/it]
+Evaluating: 100%|##########| 4/4 [00:22<00:00,  6.11s/it]
+Evaluating: 100%|##########| 4/4 [00:22<00:00,  5.53s/it]
+RAGAS 11/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:13,  4.59s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.21s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.51s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.76s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.06s/it]
+RAGAS 12/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:12,  4.30s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.23s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.32s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.66s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  3.94s/it]
+RAGAS 13/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.48s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.62s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.56s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  5.78s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  4.83s/it]
+RAGAS 14/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.37s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.58s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.65s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.59s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.71s/it]
+RAGAS 15/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:06<00:19,  6.45s/it]
+Evaluating:  50%|#####     | 2/4 [00:07<00:06,  3.15s/it]
+Evaluating:  75%|#######5  | 3/4 [00:10<00:03,  3.19s/it]
+Evaluating: 100%|##########| 4/4 [00:21<00:00,  6.07s/it]
+Evaluating: 100%|##########| 4/4 [00:21<00:00,  5.25s/it]
+RAGAS 16/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:06,  2.32s/it]
+Evaluating:  50%|#####     | 2/4 [00:02<00:02,  1.29s/it]
+Evaluating:  75%|#######5  | 3/4 [00:05<00:01,  1.98s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  4.17s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  3.31s/it]
+RAGAS 17/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:03<00:11,  3.91s/it]
+Evaluating:  50%|#####     | 2/4 [00:04<00:04,  2.14s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.51s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  5.10s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.21s/it]
+RAGAS 18/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:17,  5.80s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.95s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.98s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  6.10s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.16s/it]
+RAGAS 19/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.98s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.61s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.72s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.56s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.68s/it]
+RAGAS 20/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.45s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.70s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:03,  3.00s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  6.01s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.05s/it]
+RAGAS 21/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:06<00:18,  6.06s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.97s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:03,  3.02s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  6.07s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.17s/it]
+RAGAS 22/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.46s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.72s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.90s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.23s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.55s/it]
+RAGAS 23/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.74s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.36s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.71s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.03s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.29s/it]
+RAGAS 24/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.71s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.33s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.53s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.96s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.21s/it]
+RAGAS 25/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.27s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.63s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.93s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.04s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.41s/it]
+RAGAS 26/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:13,  4.48s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.21s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.28s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  5.02s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.17s/it]
+RAGAS 27/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.30s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.58s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.64s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.28s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.50s/it]
+RAGAS 28/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:06<00:18,  6.11s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.91s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:03,  3.04s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  5.74s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  4.97s/it]
+RAGAS 29/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.86s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.43s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.75s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.64s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.70s/it]
+RAGAS 30/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:17,  5.84s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.86s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:03,  3.03s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.99s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.46s/it]
+RAGAS 31/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:06<00:18,  6.07s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.84s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.82s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.07s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.49s/it]
+RAGAS 32/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.79s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.34s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.38s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  5.03s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.23s/it]
+RAGAS 33/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:08<00:24,  8.05s/it]
+Evaluating:  50%|#####     | 2/4 [00:08<00:07,  3.63s/it]
+Evaluating:  75%|#######5  | 3/4 [00:10<00:03,  3.02s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.66s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.14s/it]
+RAGAS 34/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.53s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.72s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.60s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.31s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.55s/it]
+RAGAS 35/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.32s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.68s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.60s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.04s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.36s/it]
+RAGAS 36/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.28s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.60s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.91s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.08s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.42s/it]
+RAGAS 37/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.83s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.42s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.79s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.96s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.27s/it]
+RAGAS 38/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:12,  4.06s/it]
+Evaluating:  50%|#####     | 2/4 [00:04<00:04,  2.05s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.53s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.88s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.07s/it]
+RAGAS 39/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:08,  2.78s/it]
+Evaluating:  50%|#####     | 2/4 [00:03<00:03,  1.53s/it]
+Evaluating:  75%|#######5  | 3/4 [00:06<00:02,  2.11s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  4.00s/it]
+Evaluating: 100%|##########| 4/4 [00:13<00:00,  3.29s/it]
+RAGAS 40/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:13,  4.55s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.26s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.47s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.99s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.20s/it]
+RAGAS 41/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.82s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.43s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.61s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.11s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.34s/it]
+RAGAS 42/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.01s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.48s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.66s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.79s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.17s/it]
+RAGAS 43/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:12,  4.31s/it]
+Evaluating:  50%|#####     | 2/4 [00:04<00:04,  2.13s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.45s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.69s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  3.97s/it]
+RAGAS 44/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.14s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.43s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.53s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.85s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.18s/it]
+RAGAS 45/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.07s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.53s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.82s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.85s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.24s/it]
+RAGAS 46/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:12,  4.32s/it]
+Evaluating:  50%|#####     | 2/4 [00:04<00:04,  2.14s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.18s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.81s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.00s/it]
+RAGAS 47/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.10s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.48s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.55s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.12s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.36s/it]
+RAGAS 48/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:17,  5.94s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.83s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.95s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  5.55s/it]
+Evaluating: 100%|##########| 4/4 [00:19<00:00,  4.81s/it]
+RAGAS 49/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:13,  4.55s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.24s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.55s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  4.62s/it]
+Evaluating: 100%|##########| 4/4 [00:15<00:00,  3.97s/it]
+RAGAS 50/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.18s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.54s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.76s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.75s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.17s/it]
+RAGAS 51/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:06<00:18,  6.04s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.82s/it]
+Evaluating:  75%|#######5  | 3/4 [00:09<00:02,  2.78s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.05s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.46s/it]
+RAGAS 52/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.82s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.35s/it]
+Evaluating:  75%|#######5  | 3/4 [00:07<00:02,  2.39s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.07s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.26s/it]
+RAGAS 53/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:08<00:24,  8.08s/it]
+Evaluating:  50%|#####     | 2/4 [00:08<00:07,  3.62s/it]
+Evaluating:  75%|#######5  | 3/4 [00:10<00:03,  3.02s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.66s/it]
+Evaluating: 100%|##########| 4/4 [00:20<00:00,  5.15s/it]
+RAGAS 54/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:16,  5.47s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.68s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.58s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  5.33s/it]
+Evaluating: 100%|##########| 4/4 [00:18<00:00,  4.55s/it]
+RAGAS 55/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.28s/it]
+Evaluating:  50%|#####     | 2/4 [00:06<00:05,  2.67s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.63s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  5.08s/it]
+Evaluating: 100%|##########| 4/4 [00:17<00:00,  4.38s/it]
+RAGAS 56/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:05<00:15,  5.09s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:05,  2.52s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.77s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.84s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.22s/it]
+RAGAS 57/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:04<00:14,  4.79s/it]
+Evaluating:  50%|#####     | 2/4 [00:05<00:04,  2.41s/it]
+Evaluating:  75%|#######5  | 3/4 [00:08<00:02,  2.60s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.84s/it]
+Evaluating: 100%|##########| 4/4 [00:16<00:00,  4.16s/it]
+RAGAS 58/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:06,  2.11s/it]
+Evaluating:  50%|#####     | 2/4 [00:02<00:02,  1.23s/it]
+Evaluating:  75%|#######5  | 3/4 [00:05<00:01,  1.99s/it]
+Evaluating: 100%|##########| 4/4 [00:11<00:00,  3.67s/it]
+Evaluating: 100%|##########| 4/4 [00:11<00:00,  2.96s/it]
+RAGAS 59/60 saved
+
+Evaluating:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating:  25%|##5       | 1/4 [00:02<00:07,  2.64s/it]
+Evaluating:  50%|#####     | 2/4 [00:03<00:02,  1.47s/it]
+Evaluating:  75%|#######5  | 3/4 [00:05<00:02,  2.02s/it]
+Evaluating: 100%|##########| 4/4 [00:12<00:00,  3.84s/it]
+Evaluating: 100%|##########| 4/4 [00:12<00:00,  3.15s/it]
+RAGAS 60/60 saved

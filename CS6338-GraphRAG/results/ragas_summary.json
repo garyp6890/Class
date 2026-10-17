@@ -1,0 +1,98 @@
+[
+  {
+    "mode": "text_only",
+    "attempted": 20,
+    "faithfulness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.3458333333333333
+    },
+    "answer_relevancy": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.8030696059500407
+    },
+    "context_recall": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.44999999999999996
+    },
+    "factual_correctness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.2465
+    }
+  },
+  {
+    "mode": "hybrid_without_node2vec",
+    "attempted": 20,
+    "faithfulness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.5391666666666667
+    },
+    "answer_relevancy": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.7670224639648602
+    },
+    "context_recall": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.48333333333333334
+    },
+    "factual_correctness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.4135
+    }
+  },
+  {
+    "mode": "hybrid",
+    "attempted": 20,
+    "faithfulness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.5391666666666667
+    },
+    "answer_relevancy": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.8015208453221887
+    },
+    "context_recall": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.48333333333333334
+    },
+    "factual_correctness": {
+      "finite": 20,
+      "missing": 0,
+      "mean": 0.3825
+    }
+  },
+  {
+    "mode": "pooled",
+    "attempted": 60,
+    "faithfulness": {
+      "finite": 60,
+      "missing": 0,
+      "mean": 0.4747222222222222
+    },
+    "answer_relevancy": {
+      "finite": 60,
+      "missing": 0,
+      "mean": 0.7905376384123631
+    },
+    "context_recall": {
+      "finite": 60,
+      "missing": 0,
+      "mean": 0.4722222222222222
+    },
+    "factual_correctness": {
+      "finite": 60,
+      "missing": 0,
+      "mean": 0.3475
+    }
+  }
+]

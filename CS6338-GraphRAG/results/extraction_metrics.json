@@ -1,0 +1,68 @@
+{
+  "development": {
+    "micro": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "by_predicate": {
+      "MITIGATED_BY": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "USES": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "f1": 0.8750000000000001
+      }
+    }
+  },
+  "test": {
+    "micro": {
+      "tp": 32,
+      "fp": 1,
+      "fn": 16,
+      "precision": 0.9696969696969697,
+      "recall": 0.6666666666666666,
+      "f1": 0.7901234567901234
+    },
+    "by_predicate": {
+      "ASSOCIATED_WITH": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "MITIGATED_BY": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091
+      },
+      "USES": {
+        "tp": 22,
+        "fp": 0,
+        "fn": 14,
+        "precision": 1.0,
+        "recall": 0.6111111111111112,
+        "f1": 0.7586206896551725
+      }
+    }
+  },
+  "quarantined": 17,
+  "note": "STIX silver reference; includes gold-038 association/USES discrepancy; no manual relabeling"
+}

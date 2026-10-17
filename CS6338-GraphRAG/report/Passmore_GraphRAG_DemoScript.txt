@@ -1,0 +1,113 @@
+CS 6338 FINAL CAPSTONE DEMONSTRATION
+Garyad Passmore | Cyber Threat Intelligence GraphRAG Assistant
+Target length: approximately six minutes
+
+PREPARE BEFORE RECORDING
+Start the dedicated Neo4j database and Ollama. Activate the project environment,
+set the four NEO4J environment variables described in README, and start:
+  python -m uvicorn api:app --host 127.0.0.1 --port 8000
+Open http://localhost:7474 and http://127.0.0.1:8000/docs.
+Have the final slides, results folder, and source folder ready.
+The complete experiments were executed beforehand. Show their actual saved outputs;
+do not imply that the full extraction, benchmark, and judge evaluation finish in six minutes.
+
+0:00-0:40 | PROBLEM AND SCOPE
+SHOW slides 1-2.
+SAY:
+I'm Garyad Passmore, and this is my CS 6338 final capstone. My system helps an
+incident responder connect a threat group to a technique and then to a mitigation,
+with the original evidence attached. The goal is a traceable answer, rather than
+an answer that merely sounds plausible. I kept the experiment manageable: sixty
+ATT&CK narratives, fifty canonical entities, and twenty test questions. This is a
+controlled prototype. It is not a replacement for an analyst or a production CTI platform.
+
+0:40-1:25 | RAW DATA AND EXTRACTION
+SHOW data/documents.json, prompts/extract.txt, and results/extraction.json.
+SAY:
+Here is one original narrative, its source URL, and its record identifier. The
+extractor receives the narrative and the entity catalog, but never the gold relation
+or reference answer. It uses a local Llama model and a Pydantic JSON schema. The
+validator checks canonical IDs, relation direction, and whether the evidence is a
+verbatim substring. It allows up to two repairs after the initial request. This saved
+artifact contains the actual model outputs and validation errors. I preserve failures
+instead of filling in missing relations from the reference data. The complete run
+can be reproduced with python run_pipeline.py extract in a fresh results directory.
+
+1:25-2:15 | TRANSACTIONAL GRAPH LOAD
+RUN in a prepared terminal:
+  python run_pipeline.py load
+SHOW results/ingestion.json and Neo4j Browser.
+RUN in Neo4j Browser:
+  MATCH (s:Entity)-[r:USES|MITIGATED_BY|ASSOCIATED_WITH]->(t:Entity)
+  RETURN s,r,t LIMIT 40;
+SAY:
+This loader writes only accepted extracted assertions into the domain graph. The
+structured STIX import is stored separately and cannot supply reference edges to QA.
+The run merges stable IDs, loads twice to check idempotency, and deliberately rolls
+back a probe write. These saved counts show whether repeated ingestion changed the
+graph and whether rollback worked. Each relationship links through an Assertion to
+a source chunk, so I can trace a graph fact back to the text used to extract it.
+
+2:15-3:00 | GRAPH ANALYTICS
+SHOW slide 6. RUN in Neo4j Browser:
+  CALL gds.pageRank.stream('cti_final', {dampingFactor:0.85,maxIterations:20})
+  YIELD nodeId,score
+  RETURN gds.util.asNode(nodeId).id AS entity,score
+  ORDER BY score DESC LIMIT 5;
+SHOW results/analytics_42.json and a vector in results/graph_vectors_42.json.
+SAY:
+PageRank is the required graph analytics step. Here it measures centrality in this
+small selected graph; it is not a threat severity score. I also ran connected-component
+analysis and fitted 128-dimensional Node2Vec embeddings for three seeds. Graph
+vectors propose neighboring entities. They never count as evidence that a relation
+exists. The text embeddings use a different, 768-dimensional vector space.
+
+3:00-4:15 | LIVE GRAPH-GROUNDED ANSWER
+SHOW the API documentation page. Expand POST /query, select Try it out, and use:
+  {
+    "query": "In this frozen subset, which mitigation is linked to Software Packing (T1027.002) as reported for APT29, and what is the two-edge evidence path?",
+    "mode": "hybrid"
+  }
+Execute and expand the response. If this example abstains, show that result honestly
+and use an answered example already present in the saved benchmark, clearly labeling
+it as saved. If a service fails, show the failure and the saved evidence; do not call it live success.
+SAY:
+This request resolves the query's entities, retrieves text and bounded graph paths,
+and supplies the evidence to the local language model. The answer includes citations
+and a retrieved subgraph. I can inspect the chunk, document identifier, and source URL.
+A separate failure example on slide 10 shows why this successful case alone does not
+establish factual reliability.
+A multi-hop connection is derived from those links; it is not a new direct observation.
+The engine rejects absent citation IDs and returns an explicit error for a dependency
+failure. It can also report insufficient evidence when a required relationship is missing.
+
+4:15-5:15 | COMPARATIVE RESULTS
+SHOW slides 5 and 8-9, then results/benchmark_summary.csv and results/ragas.csv.
+SAY:
+I measured extraction with exact directed tuples against the original STIX-derived
+reference. The report gives precision, recall, and F1 for the forty-eight test records,
+with the development results reported separately. For question answering, I compared
+text only, hybrid without Node2Vec, and full hybrid on the same twenty questions under
+seeds forty-two, forty-three, and forty-four. These are actual saved observations,
+including errors, abstentions, evidence retrieval, citation membership, and elapsed time.
+The local RAGAS judge adds faithfulness, relevancy, and context recall measurements.
+Judge failures and missing scores retain their real denominators. A valid citation ID
+alone does not establish that every claim is supported.
+
+5:15-6:00 | LIMITATIONS AND CLOSE
+SHOW slide 11 and the report's limitations page.
+SAY:
+The main limitations are the small corpus, template-based questions, shared entities
+and sources, and silver labels that still need independent review. One Lazarus and
+MagicRAT record has weaker wording than its official USES label, and I preserve that
+discrepancy. The benchmark mainly contains answerable questions, so it does not prove
+unanswerable-question detection. Human rating fields are blank until someone actually
+reviews the answers. This final project demonstrates the complete local pipeline:
+structured and unstructured ingestion, graph analytics, entity resolution, and
+GraphRAG with traceable citations. The repository contains setup instructions,
+source code, tests, raw results, and the submission materials for reproduction.
+
+RECORDING NOTE
+Aim for natural speech around 135-150 words per minute. Pause while the live request
+runs. If necessary, shorten the dataset introduction rather than hiding an error or
+claiming a precomputed result is live. Keep the recording between five and seven minutes.

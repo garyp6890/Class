@@ -1,0 +1,106 @@
+{
+  "first_load": {
+    "nodes": 273,
+    "assertions": 43,
+    "chunks": 60
+  },
+  "second_load": {
+    "nodes": 273,
+    "assertions": 43,
+    "chunks": 60
+  },
+  "idempotent": true,
+  "rollback_verified": true,
+  "relationships": [
+    {
+      "type": "ASSOCIATED_WITH",
+      "count": 1
+    },
+    {
+      "type": "HAS_CHUNK",
+      "count": 60
+    },
+    {
+      "type": "MENTIONED_IN",
+      "count": 89
+    },
+    {
+      "type": "MENTIONS_ENTITY",
+      "count": 89
+    },
+    {
+      "type": "MITIGATED_BY",
+      "count": 13
+    },
+    {
+      "type": "OBJECT",
+      "count": 43
+    },
+    {
+      "type": "SUBJECT",
+      "count": 43
+    },
+    {
+      "type": "SUPPORTED_BY",
+      "count": 43
+    },
+    {
+      "type": "USES",
+      "count": 29
+    }
+  ],
+  "indexes": [
+    {
+      "name": "assertion_id",
+      "state": "ONLINE"
+    },
+    {
+      "name": "assertion_tuple",
+      "state": "ONLINE"
+    },
+    {
+      "name": "chunk_id",
+      "state": "ONLINE"
+    },
+    {
+      "name": "chunk_text",
+      "state": "ONLINE"
+    },
+    {
+      "name": "document_id",
+      "state": "ONLINE"
+    },
+    {
+      "name": "entity_graph",
+      "state": "ONLINE"
+    },
+    {
+      "name": "entity_id",
+      "state": "ONLINE"
+    },
+    {
+      "name": "entity_name",
+      "state": "ONLINE"
+    },
+    {
+      "name": "index_343aff4e",
+      "state": "ONLINE"
+    },
+    {
+      "name": "index_f7700477",
+      "state": "ONLINE"
+    },
+    {
+      "name": "stix_relation_id",
+      "state": "ONLINE"
+    }
+  ],
+  "neo4j": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "5.26.4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "pydantic": "2.13.5",
+    "neo4j": "5.28.8",
+    "fastapi": "0.143.3",
+    "networkx": "3.7",
+    "gensim": "4.4.0"
+  },
+  "sha256": {
+    "data\\annotation_review.csv": "217629fd306d60720ffa6253f45b5c6dda46e4c1da05fc174e3da9f08e5122d3",
+    "data\\dataset_info.json": "f5520b898d25b6a9771be89c3de53622245eb96d87de8f71e17c3f9462be5707",
+    "data\\documents.json": "e44f393cf47e7144137caed4181b969c949285559036f9ee2fdbc7bfc9f98b95",
+    "data\\entities.json": "0d22f81bc06fa7be0ab48739192a8c2eea96e38b0354c093e3fa648ac04e83f6",
+    "data\\eval_queries.json": "50250802dfb713bc7f8ddc32a2f0a5c065d83220879a8bc4167925726c7a207c",
+    "data\\gold_triples.json": "74a3371924c54cf6e47878a6335c738173a2341ffe27d059dd5a7bae32d2c869",
+    "data\\source\\attack_subset_19.2.json": "97081a833d30e2b255722cc49e8b18efcad19817bbea7399f07261824e8938be",
+    "data\\source\\MITRE_LICENSE.txt": "9bba129c74e03530941842934486da5711c947f66d20db2c60f031359030d13e",
+    "prompts\\answer.txt": "d9acc3a640b70cd08139c5ab6c2e98b2612ad144fb10659596b161d2db2ff144",
+    "prompts\\extract.txt": "aeff49192bcf8b2de75aef2040bb7342e082b82728d4773b6574913780db0f79"
+  },
+  "source_sha256": {
+    "api.py": "b34be2799be8dfdfd8da9f1f89ab59f5ff0f50f0c19b115dc6724d1fa0427a36",
+    "build_benchmark.py": "0be5727e94ec06f922d63efa465023bba25dadf8d4a6a932286e57c26305bc67",
+    "build_final_report.py": "cf19f86be8cab237e35450f2b832b51a31ae2562e7339d9562e26d3955a38b96",
+    "build_report.py": "22c125593975b49dfe83f0c7cb11425631b9b81bb6b1eb3ee0224a6be14e1d2b",
+    "chunking.py": "a9218f00e51698d6e3b70f7e50f35c1d5dbf08ac05eee1b4b0aa449d0179ab27",
+    "embeddings.py": "1ca8dcb8813cbf18af021921ac19adae24a00a4eaac18a433335b259a38c8988",
+    "engine.py": "6d45b6c90294cde5df18c53633c1d3b2f3f4ab10adbd52978ee8ea49e3690e68",
+    "evaluate_ragas.py": "96e2aa0cc0ffb1085f8e7aeae39dae2f987f27aa8f92426ecd4245806904907d",
+    "evaluate_triples.py": "082a60bdbdfac1ed7b17ab2f88a3ee1340e508ee3dd5ecf1e15d4f533980514c",
+    "extract.py": "fbb3ad0c9bce330ef4c17aff70a9b747189c483e613398b5e86b50e97703ab1b",
+    "ingest.py": "8e2f5c15a1e05232744f3e1afb4f075bf0e9c91ac04ef65b6b826f8611e943d0",
+    "init_db.py": "27144493d7eb2fe8f499676ed6cbff5340abc79c6c547d24e4370da9c13f0eda",
+    "parser.py": "7c7a732792ef206e6b2ed397c896e4a2157fc79695af25c9bd3245745d0cd539",
+    "resolve.py": "20d3d633b389b4dd10445814865d2238587befdb72174eac1a4fe53b069157ea",
+    "retrieval.py": "4c917486fddd4bd57e3b0dfb2e2e113f7da05253b9fe46472278fde60f87eb7c",
+    "run_pipeline.py": "bfe448b49659111f9b0ec89295689775f5fdac7defce7a50ddb879601ec8e02f",
+    "schemas.py": "c57345492854cf9a2ba7e70ee43349e254f8377113c90de4e2bf1f3e61fabcec",
+    "structured_ingest.py": "83a4726807642a75a7213f9f249a51f644035267bb8913d3ecab62958cd29a74",
+    "summarize_judge.py": "b5a0a3473454633d1b8df0d8033f7732a993c56942ea0abf60aa50b7896f4bd9",
+    "summarize_results.py": "cac9addddb329806fe2832bd514c86ee6a86c7982c6d631c2465157c1e8633f0",
+    "validate_benchmark.py": "51d811659a319ac8e0ad475e51db10a5885fc81fa1b52f349d3b4bce1c8ac18c"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen2.5:14b",
+        "model": "qwen2.5:14b",
+        "modified_at": "2026-10-16T22:52:18.6409036-04:00",
+        "size": 8988124069,
+        "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "14.8B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 32768,
+          "embedding_length": 5120,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      },
+      {
+        "name": "nomic-embed-text:v1.5",
+        "model": "nomic-embed-text:v1.5",
+        "modified_at": "2026-10-16T22:50:48.8322989-04:00",
+        "size": 274302450,
+        "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "nomic-bert",
+          "families": [
+            "nomic-bert"
+          ],
+          "parameter_size": "137M",
+          "quantization_level": "F16",
+          "context_length": 2048,
+          "embedding_length": 768,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "embedding"
+        ]
+      },
+      {
+        "name": "llama3.1:8b",
+        "model": "llama3.1:8b",
+        "modified_at": "2026-10-16T22:50:43.9701916-04:00",
+        "size": 4920753328,
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "llama",
+          "families": [
+            "llama"
+          ],
+          "parameter_size": "8.0B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 131072,
+          "embedding_length": 4096,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools"
+        ]
+      }
+    ]
+  },
+  "ollama": {
+    "version": "0.40.5"
+  },
+  "evaluation_protocol": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "temperature": 0,
+    "ragas": "0.2.15",
+    "judge": "qwen2.5:14b",
+    "relevancy_strictness": 1,
+    "judge_context": 8192,
+    "judge_output_limit": 2048,
+    "judge_cohort_seed": 42,
+    "context_budget_bytes": 6000,
+    "graph_hops": 2,
+    "default_top_k_chunks": 5
+  }
+}

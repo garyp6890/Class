@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "qa-01",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Security Account Manager (T1003.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Security Account Manager (T1003.002), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1064.842599997064
+  },
+  {
+    "id": "qa-02",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to LSA Secrets (T1003.004) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES LSA Secrets (T1003.004), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 847.6150999777019
+  },
+  {
+    "id": "qa-03",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1282.270099996822
+  },
+  {
+    "id": "qa-04",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Cloud Services (T1021.007) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Cloud Services (T1021.007), which is MITIGATED_BY Privileged Account Management (M1026). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 963.6921999917831
+  },
+  {
+    "id": "qa-05",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Software Packing (T1027.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Software Packing (T1027.002), which is MITIGATED_BY Antivirus/Antimalware (M1049). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+        "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+        "source_url": "https://attack.mitre.org/techniques/T1027/002",
+        "evidence_text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. "
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 767.5703999993857,
+    "generated_at": "2026-10-17T03:03:53.016845Z",
+    "response": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+    "retrieved_contexts": [
+      "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+      "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. ",
+      "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); File Deletion (T1070.004).\n\n[APT28](https://attack.mitre.org/groups/G0007) has intentionally deleted computer files to cover their tracks, including with use of the program CCleaner.(Citation: DOJ GRU Indictment Jul 2018)",
+      "Record context: APT28 (G0007); Process Discovery (T1057).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.(Citation: Unit 42 Playbook Dec 2017)"
+    ],
+    "trace": {
+      "retrieval_ms": 69.86600000527687,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4:0",
+          "text": "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+          "document_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+          "source_url": "https://attack.mitre.org/techniques/T1027/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+          "text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. ",
+          "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+          "source_url": "https://attack.mitre.org/techniques/T1027/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363:0",
+          "text": "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1:0",
+          "text": "Record context: APT28 (G0007); File Deletion (T1070.004).\n\n[APT28](https://attack.mitre.org/groups/G0007) has intentionally deleted computer files to cover their tracks, including with use of the program CCleaner.(Citation: DOJ GRU Indictment Jul 2018)",
+          "document_id": "attack19.2:relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1",
+          "source_url": "https://attack.mitre.org/techniques/T1070/004"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49:0",
+          "text": "Record context: APT28 (G0007); Process Discovery (T1057).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.(Citation: Unit 42 Playbook Dec 2017)",
+          "document_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49",
+          "source_url": "https://attack.mitre.org/techniques/T1057"
+        }
+      ],
+      "facts": [],
+      "anchors": [
+        "T1027.002",
+        "G0016"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:03:53.0161634Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 679262600,
+        "load_duration": 3816400,
+        "prompt_eval_count": 1106,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 121237000,
+        "eval_count": 76,
+        "eval_duration": 526613000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 1.0,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-06",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Junk Data (T1001.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES Junk Data (T1001.001), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1438.0143999878783
+  },
+  {
+    "id": "qa-07",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to OS Credential Dumping (T1003) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES OS Credential Dumping (T1003), which is MITIGATED_BY Active Directory Configuration (M1015). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1040.6511999899521
+  },
+  {
+    "id": "qa-08",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to LSASS Memory (T1003.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES LSASS Memory (T1003.001), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "LSASS Memory (T1003.001) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 uses LSASS Memory (T1003.001) to dump the LSASS process memory, and then adds 'junk data' to each encoded string to prevent trivial decoding without knowledge of the junk removal algorithm.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+        "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+        "source_url": "https://attack.mitre.org/techniques/T1003/001",
+        "evidence_text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c:0",
+        "document_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+        "source_url": "https://attack.mitre.org/techniques/T1001/001",
+        "evidence_text": "Record context: APT28 (G0007); Junk Data (T1001.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) added \"junk data\" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a \"junk length\" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.(Citation: FireEye APT28)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 1429.1889000160154,
+    "generated_at": "2026-10-17T03:03:56.928301Z",
+    "response": "LSASS Memory (T1003.001) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 uses LSASS Memory (T1003.001) to dump the LSASS process memory, and then adds 'junk data' to each encoded string to prevent trivial decoding without knowledge of the junk removal algorithm.",
+    "retrieved_contexts": [
+      "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); Junk Data (T1001.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) added \"junk data\" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a \"junk length\" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.(Citation: FireEye APT28)",
+      "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 59.36149999615736,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+          "text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+          "source_url": "https://attack.mitre.org/techniques/T1003/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc:0",
+          "text": "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+          "source_url": "https://attack.mitre.org/techniques/T1003/004"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363:0",
+          "text": "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c:0",
+          "text": "Record context: APT28 (G0007); Junk Data (T1001.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) added \"junk data\" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a \"junk length\" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.(Citation: FireEye APT28)",
+          "document_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+          "source_url": "https://attack.mitre.org/techniques/T1001/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "text": "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+          "source_url": "https://attack.mitre.org/techniques/T1039"
+        }
+      ],
+      "facts": [],
+      "anchors": [
+        "T1003",
+        "T1003.001",
+        "G0007"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:03:56.9257542Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"LSASS Memory (T1003.001) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 uses LSASS Memory (T1003.001) to dump the LSASS process memory, and then adds 'junk data' to each encoded string to prevent trivial decoding without knowledge of the junk removal algorithm.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0\", \"attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1347872400,
+        "load_duration": 3793800,
+        "prompt_eval_count": 1222,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 131339000,
+        "eval_count": 175,
+        "eval_duration": 1182313000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-09",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to NTDS (T1003.003) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES NTDS (T1003.003), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 807.5921999989077
+  },
+  {
+    "id": "qa-10",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1008.8795000046957
+  },
+  {
+    "id": "qa-11",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference": "FIN7 (G0046) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 695.229200005997
+  },
+  {
+    "id": "qa-12",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Fallback Channels (T1008) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference": "FIN7 (G0046) USES Fallback Channels (T1008), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Network Intrusion Prevention (M1031) is linked to Fallback Channels (T1008) as reported for FIN7. The two-edge evidence path is: FIN7 uses DNS as a backup channel for C2 if HTTP fails (chunk_id: attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0), and Network Intrusion Prevention (M1031) can be used to mitigate activity at the network level by identifying traffic for specific adversary malware (chunk_id: attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0).",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0",
+        "document_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+        "source_url": "https://attack.mitre.org/techniques/T1008",
+        "evidence_text": "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0",
+        "document_id": "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6",
+        "source_url": "https://attack.mitre.org/techniques/T1008",
+        "evidence_text": "Record context: Network Intrusion Prevention (M1031); Fallback Channels (T1008).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. (Citation: University of Birmingham C2)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 1796.5913999942131,
+    "generated_at": "2026-10-17T03:04:01.241826Z",
+    "response": "Network Intrusion Prevention (M1031) is linked to Fallback Channels (T1008) as reported for FIN7. The two-edge evidence path is: FIN7 uses DNS as a backup channel for C2 if HTTP fails (chunk_id: attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0), and Network Intrusion Prevention (M1031) can be used to mitigate activity at the network level by identifying traffic for specific adversary malware (chunk_id: attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0).",
+    "retrieved_contexts": [
+      "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)",
+      "Record context: Network Intrusion Prevention (M1031); Fallback Channels (T1008).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. (Citation: University of Birmingham C2)",
+      "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n",
+      "Record context: FIN7 (G0046); Data from Local System (T1005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has collected files and other sensitive information from a compromised network.(Citation: CrowdStrike Carbon Spider August 2021)",
+      "Record context: FIN7 (G0046); SSH (T1021.004).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used SSH to move laterally through victim environments.(Citation: CrowdStrike Carbon Spider August 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 54.90970000391826,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0",
+          "text": "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)",
+          "document_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+          "source_url": "https://attack.mitre.org/techniques/T1008"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0",
+          "text": "Record context: Network Intrusion Prevention (M1031); Fallback Channels (T1008).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. (Citation: University of Birmingham C2)",
+          "document_id": "attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6",
+          "source_url": "https://attack.mitre.org/techniques/T1008"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8:0",
+          "text": "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n",
+          "document_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+          "source_url": "https://attack.mitre.org/techniques/T1021/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a:0",
+          "text": "Record context: FIN7 (G0046); Data from Local System (T1005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has collected files and other sensitive information from a compromised network.(Citation: CrowdStrike Carbon Spider August 2021)",
+          "document_id": "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2:0",
+          "text": "Record context: FIN7 (G0046); SSH (T1021.004).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used SSH to move laterally through victim environments.(Citation: CrowdStrike Carbon Spider August 2021)",
+          "document_id": "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+          "source_url": "https://attack.mitre.org/techniques/T1021/004"
+        }
+      ],
+      "facts": [],
+      "anchors": [
+        "T1008",
+        "G0046"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:01.239239Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Network Intrusion Prevention (M1031) is linked to Fallback Channels (T1008) as reported for FIN7. The two-edge evidence path is: FIN7 uses DNS as a backup channel for C2 if HTTP fails (chunk_id: attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0), and Network Intrusion Prevention (M1031) can be used to mitigate activity at the network level by identifying traffic for specific adversary malware (chunk_id: attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0).\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0\", \"attack19.2:relationship--1469ff36-c655-4513-8ffa-81dcb55c4ae6:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1718999900,
+        "load_duration": 3773800,
+        "prompt_eval_count": 1091,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 109831000,
+        "eval_count": 231,
+        "eval_duration": 1558168000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 1.0,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-13",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Remote Desktop Protocol (T1021.001) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference": "FIN7 (G0046) USES Remote Desktop Protocol (T1021.001), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Fallback Channels (T1008) is linked to Remote Desktop Protocol (T1021.001) as reported for FIN7. The two-edge evidence path is: FIN7 uses Harpy backdoor malware (T1008) which can use DNS as a backup channel for C2 if HTTP fails, and FIN7 has used RDP (T1021.001) to move laterally in victim environments.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8:0",
+        "document_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+        "source_url": "https://attack.mitre.org/techniques/T1021/001",
+        "evidence_text": "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0",
+        "document_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+        "source_url": "https://attack.mitre.org/techniques/T1008",
+        "evidence_text": "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 1386.432800005423,
+    "generated_at": "2026-10-17T03:04:02.629848Z",
+    "response": "Fallback Channels (T1008) is linked to Remote Desktop Protocol (T1021.001) as reported for FIN7. The two-edge evidence path is: FIN7 uses Harpy backdoor malware (T1008) which can use DNS as a backup channel for C2 if HTTP fails, and FIN7 has used RDP (T1021.001) to move laterally in victim environments.",
+    "retrieved_contexts": [
+      "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n",
+      "Record context: FIN7 (G0046); Data from Local System (T1005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has collected files and other sensitive information from a compromised network.(Citation: CrowdStrike Carbon Spider August 2021)",
+      "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)",
+      "Record context: FIN7 (G0046); SSH (T1021.004).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used SSH to move laterally through victim environments.(Citation: CrowdStrike Carbon Spider August 2021)",
+      "Record context: FIN7 (G0046); VNC (T1021.005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used TightVNC to control compromised hosts.(Citation: CrowdStrike Carbon Spider August 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 45.91690000961535,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8:0",
+          "text": "Record context: FIN7 (G0046); Remote Desktop Protocol (T1021.001).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used RDP to move laterally in victim environments.(Citation: CrowdStrike Carbon Spider August 2021)\n",
+          "document_id": "attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8",
+          "source_url": "https://attack.mitre.org/techniques/T1021/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a:0",
+          "text": "Record context: FIN7 (G0046); Data from Local System (T1005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has collected files and other sensitive information from a compromised network.(Citation: CrowdStrike Carbon Spider August 2021)",
+          "document_id": "attack19.2:relationship--bc0ed7ce-f99f-4d88-a3cc-81af825f311a",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0",
+          "text": "Record context: FIN7 (G0046); Fallback Channels (T1008).\n\n[FIN7](https://attack.mitre.org/groups/G0046)'s Harpy backdoor malware can use DNS as a backup channel for C2 if HTTP fails.(Citation: Crowdstrike GTR2020 Mar 2020)",
+          "document_id": "attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab",
+          "source_url": "https://attack.mitre.org/techniques/T1008"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2:0",
+          "text": "Record context: FIN7 (G0046); SSH (T1021.004).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used SSH to move laterally through victim environments.(Citation: CrowdStrike Carbon Spider August 2021)",
+          "document_id": "attack19.2:relationship--15d87b47-837d-4f62-9d78-4ec092c111d2",
+          "source_url": "https://attack.mitre.org/techniques/T1021/004"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae:0",
+          "text": "Record context: FIN7 (G0046); VNC (T1021.005).\n\n[FIN7](https://attack.mitre.org/groups/G0046) has used TightVNC to control compromised hosts.(Citation: CrowdStrike Carbon Spider August 2021)",
+          "document_id": "attack19.2:relationship--2f1588c1-16b9-4cb2-b94c-1756829183ae",
+          "source_url": "https://attack.mitre.org/techniques/T1021/005"
+        }
+      ],
+      "facts": [],
+      "anchors": [
+        "T1021.001",
+        "G0046"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:02.6272374Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Fallback Channels (T1008) is linked to Remote Desktop Protocol (T1021.001) as reported for FIN7. The two-edge evidence path is: FIN7 uses Harpy backdoor malware (T1008) which can use DNS as a backup channel for C2 if HTTP fails, and FIN7 has used RDP (T1021.001) to move laterally in victim environments.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--58dd2402-7b8a-4ed0-8fd3-7b9656b543b8:0\", \"attack19.2:relationship--dd9f1283-ff4b-4314-b7ce-f326d6932bab:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1318940100,
+        "load_duration": 4391500,
+        "prompt_eval_count": 1032,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 108430000,
+        "eval_count": 174,
+        "eval_duration": 1176680000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-14",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to SSH (T1021.004) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference": "FIN7 (G0046) USES SSH (T1021.004), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 802.1854999824427
+  },
+  {
+    "id": "qa-15",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to VNC (T1021.005) as reported for FIN7, and what is the two-edge evidence path?",
+    "reference": "FIN7 (G0046) USES VNC (T1021.005), which is MITIGATED_BY Limit Software Installation (M1033). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1455.8685999945737
+  },
+  {
+    "id": "qa-16",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Protocol or Service Impersonation (T1001.003) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference": "Lazarus Group (G0032) USES Protocol or Service Impersonation (T1001.003), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 761.7874999996275
+  },
+  {
+    "id": "qa-17",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference": "Lazarus Group (G0032) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Fallback Channels (T1008) is linked to Data from Local System (T1005) as reported for Lazarus Group. The two-edge evidence path is: Lazarus Group (G0032) has collected data and files from compromised networks (chunk_id: attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0), and Lazarus Group malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random (chunk_id: attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0).",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0",
+        "document_id": "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044",
+        "source_url": "https://attack.mitre.org/techniques/T1005",
+        "evidence_text": "Record context: Lazarus Group (G0032); Data from Local System (T1005).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) has collected data and files from compromised networks.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Loaders)(Citation: Novetta Blockbuster RATs)(Citation: Kaspersky ThreatNeedle Feb 2021)"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0",
+        "document_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+        "source_url": "https://attack.mitre.org/techniques/T1008",
+        "evidence_text": "Record context: Lazarus Group (G0032); Fallback Channels (T1008).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [],
+      "cypher_template_id": null
+    },
+    "execution_time_ms": 1780.6915999972261,
+    "generated_at": "2026-10-17T03:04:07.436466Z",
+    "response": "Fallback Channels (T1008) is linked to Data from Local System (T1005) as reported for Lazarus Group. The two-edge evidence path is: Lazarus Group (G0032) has collected data and files from compromised networks (chunk_id: attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0), and Lazarus Group malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random (chunk_id: attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0).",
+    "retrieved_contexts": [
+      "Record context: Lazarus Group (G0032); Data from Local System (T1005).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) has collected data and files from compromised networks.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Loaders)(Citation: Novetta Blockbuster RATs)(Citation: Kaspersky ThreatNeedle Feb 2021)",
+      "Record context: Lazarus Group (G0032); Fallback Channels (T1008).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+      "Record context: Lazarus Group (G0032); Protocol or Service Impersonation (T1001.003).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware also uses a unique form of communication encryption known as FakeTLS that mimics TLS but uses a different encryption method, potentially evading SSL traffic inspection/decryption.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Destructive Malware)(Citation: McAfee Lazarus Resurfaces Feb 2018)(Citation: McAfee-GhostSecret-fixurl)",
+      "Record context: LAMEHUG (S9035); Data from Local System (T1005).\n\n[LAMEHUG](https://attack.mitre.org/software/S9035) has the ability to collect system information and files of interest from compromised systems.(Citation: Splunk LAMEHUG SEP 2025)(Citation: Nov AI Threat Tracker)",
+      "Record context: Lazarus Group (G0032); Remote Desktop Protocol (T1021.001).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraCharlie uses RDP for propagation.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)"
+    ],
+    "trace": {
+      "retrieval_ms": 58.1868999870494,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0",
+          "text": "Record context: Lazarus Group (G0032); Data from Local System (T1005).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) has collected data and files from compromised networks.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Loaders)(Citation: Novetta Blockbuster RATs)(Citation: Kaspersky ThreatNeedle Feb 2021)",
+          "document_id": "attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0",
+          "text": "Record context: Lazarus Group (G0032); Fallback Channels (T1008).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+          "document_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+          "source_url": "https://attack.mitre.org/techniques/T1008"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--0b255cef-7177-48b8-ade1-752314f90b7e:0",
+          "text": "Record context: Lazarus Group (G0032); Protocol or Service Impersonation (T1001.003).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware also uses a unique form of communication encryption known as FakeTLS that mimics TLS but uses a different encryption method, potentially evading SSL traffic inspection/decryption.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster Destructive Malware)(Citation: McAfee Lazarus Resurfaces Feb 2018)(Citation: McAfee-GhostSecret-fixurl)",
+          "document_id": "attack19.2:relationship--0b255cef-7177-48b8-ade1-752314f90b7e",
+          "source_url": "https://attack.mitre.org/techniques/T1001/003"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f:0",
+          "text": "Record context: LAMEHUG (S9035); Data from Local System (T1005).\n\n[LAMEHUG](https://attack.mitre.org/software/S9035) has the ability to collect system information and files of interest from compromised systems.(Citation: Splunk LAMEHUG SEP 2025)(Citation: Nov AI Threat Tracker)",
+          "document_id": "attack19.2:relationship--6460c09b-2bde-4c4a-9765-591405d4ea8f",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859:0",
+          "text": "Record context: Lazarus Group (G0032); Remote Desktop Protocol (T1021.001).\n\n[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraCharlie uses RDP for propagation.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+          "document_id": "attack19.2:relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+          "source_url": "https://attack.mitre.org/techniques/T1021/001"
+        }
+      ],
+      "facts": [],
+      "anchors": [
+        "T1005",
+        "G0032"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:07.4336472Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Fallback Channels (T1008) is linked to Data from Local System (T1005) as reported for Lazarus Group. The two-edge evidence path is: Lazarus Group (G0032) has collected data and files from compromised networks (chunk_id: attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0), and Lazarus Group malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random (chunk_id: attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0).\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--3fe9b64a-6435-4592-9181-2ad50ee93044:0\", \"attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1718324300,
+        "load_duration": 3844200,
+        "prompt_eval_count": 1165,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 122861000,
+        "eval_count": 230,
+        "eval_duration": 1563601000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-18",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Fallback Channels (T1008) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference": "Lazarus Group (G0032) USES Fallback Channels (T1008), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1484.3918000115082
+  },
+  {
+    "id": "qa-19",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to Remote Desktop Protocol (T1021.001) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference": "Lazarus Group (G0032) USES Remote Desktop Protocol (T1021.001), which is MITIGATED_BY User Account Management (M1018). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1703.5221000260208
+  },
+  {
+    "id": "qa-20",
+    "seed": 42,
+    "mode": "text_only",
+    "user_input": "In this frozen subset, which mitigation is linked to SMB/Windows Admin Shares (T1021.002) as reported for Lazarus Group, and what is the two-edge evidence path?",
+    "reference": "Lazarus Group (G0032) USES SMB/Windows Admin Shares (T1021.002), which is MITIGATED_BY Privileged Account Management (M1026). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1370.6797999911942
+  },
+  {
+    "id": "qa-01",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to Security Account Manager (T1003.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Security Account Manager (T1003.002), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "The mitigation linked to Security Account Manager (T1003.002) as reported for APT29 is 'reg save' command to save registry hives.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+        "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+        "source_url": "https://attack.mitre.org/techniques/T1003/002",
+        "evidence_text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 989.745300001232,
+    "generated_at": "2026-10-17T03:04:12.991555Z",
+    "response": "The mitigation linked to Security Account Manager (T1003.002) as reported for APT29 is 'reg save' command to save registry hives.",
+    "retrieved_contexts": [
+      "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+      "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+      "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 181.56089997501113,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+          "source_url": "https://attack.mitre.org/techniques/T1003/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+          "source_url": "https://attack.mitre.org/techniques/T1021/007"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "text": "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+          "document_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+          "source_url": "https://attack.mitre.org/techniques/T1040"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363:0",
+          "text": "Record context: APT28 (G0007); Data from Local System (T1005).\n\n[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)"
+        }
+      ],
+      "anchors": [
+        "T1003",
+        "T1003.002",
+        "G0016"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:12.9910489Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"The mitigation linked to Security Account Manager (T1003.002) as reported for APT29 is 'reg save' command to save registry hives.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 782773400,
+        "load_duration": 3747400,
+        "prompt_eval_count": 1559,
+        "prompt_eval_cached_count": 553,
+        "prompt_eval_duration": 125647000,
+        "eval_count": 87,
+        "eval_duration": 605702000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-02",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to LSA Secrets (T1003.004) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES LSA Secrets (T1003.004), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "User Training (M1017) is linked to LSA Secrets (T1003.004) as reported for APT29. The two-edge evidence path is: APT29 (G0016) uses Security Account Manager (T1003.002), which is related to LSA Secrets (T1003.004).",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247:0",
+        "document_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247",
+        "source_url": "https://attack.mitre.org/techniques/T1003/004",
+        "evidence_text": "Record context: User Training (M1017); LSA Secrets (T1003.004).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts."
+      },
+      {
+        "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+        "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+        "source_url": "https://attack.mitre.org/techniques/T1003/002",
+        "evidence_text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc:0",
+        "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+        "source_url": "https://attack.mitre.org/techniques/T1003/004",
+        "evidence_text": "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "T1003.004",
+          "target_id": "M1017",
+          "predicate": "MITIGATED_BY",
+          "evidence_text": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 1581.2624000245705,
+    "generated_at": "2026-10-17T03:04:14.575042Z",
+    "response": "User Training (M1017) is linked to LSA Secrets (T1003.004) as reported for APT29. The two-edge evidence path is: APT29 (G0016) uses Security Account Manager (T1003.002), which is related to LSA Secrets (T1003.004).",
+    "retrieved_contexts": [
+      "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: User Training (M1017); LSA Secrets (T1003.004).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+      "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+      "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+    ],
+    "trace": {
+      "retrieval_ms": 69.75470000179484,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247:0",
+          "text": "Record context: User Training (M1017); LSA Secrets (T1003.004).\n\nLimit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+          "document_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247",
+          "source_url": "https://attack.mitre.org/techniques/T1003/004"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+          "source_url": "https://attack.mitre.org/techniques/T1021/007"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+          "source_url": "https://attack.mitre.org/techniques/T1003/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc:0",
+          "text": "Record context: APT29 (G0016); LSA Secrets (T1003.004).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+          "source_url": "https://attack.mitre.org/techniques/T1003/004"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)"
+        },
+        {
+          "source_id": "T1003.004",
+          "target_id": "M1017",
+          "predicate": "MITIGATED_BY",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247:0",
+          "evidence_text": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts."
+        }
+      ],
+      "anchors": [
+        "T1003",
+        "T1003.004",
+        "G0016"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:14.5717668Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"User Training (M1017) is linked to LSA Secrets (T1003.004) as reported for APT29. The two-edge evidence path is: APT29 (G0016) uses Security Account Manager (T1003.002), which is related to LSA Secrets (T1003.004).\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247:0\", \"attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0\", \"attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1507405400,
+        "load_duration": 3892700,
+        "prompt_eval_count": 1512,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 168806000,
+        "eval_count": 190,
+        "eval_duration": 1293663000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 1.0,
+    "path_ids_mentioned": true
+  },
+  {
+    "id": "qa-03",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to Data from Local System (T1005) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Data from Local System (T1005), which is MITIGATED_BY Data Loss Prevention (M1057). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "error": "ValueError: Answer contains absent or invalid citations",
+    "execution_time_ms": 1388.6400000192225
+  },
+  {
+    "id": "qa-04",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to Cloud Services (T1021.007) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Cloud Services (T1021.007), which is MITIGATED_BY Privileged Account Management (M1026). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "The mitigation linked to Cloud Services (T1021.007) as reported for APT29 is Azure AD PowerShell. The two-edge evidence path is: APT29 (G0016) -> Cloud Services (T1021.007) -> Azure AD PowerShell.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+        "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+        "source_url": "https://attack.mitre.org/techniques/T1021/007",
+        "evidence_text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 1267.0522000116762,
+    "generated_at": "2026-10-17T03:04:17.234495Z",
+    "response": "The mitigation linked to Cloud Services (T1021.007) as reported for APT29 is Azure AD PowerShell. The two-edge evidence path is: APT29 (G0016) -> Cloud Services (T1021.007) -> Azure AD PowerShell.",
+    "retrieved_contexts": [
+      "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+      "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+      "Record context: APT28 (G0007); Web Protocols (T1071.001).\n\nLater implants used by [APT28](https://attack.mitre.org/groups/G0007), such as [CHOPSTICK](https://attack.mitre.org/software/S0023), use a blend of HTTP, HTTPS, and other legitimate channels for C2, depending on module configuration.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 62.683000025572255,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+          "source_url": "https://attack.mitre.org/techniques/T1021/007"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+          "source_url": "https://attack.mitre.org/techniques/T1003/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "text": "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+          "document_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+          "source_url": "https://attack.mitre.org/techniques/T1040"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78:0",
+          "text": "Record context: APT28 (G0007); Web Protocols (T1071.001).\n\nLater implants used by [APT28](https://attack.mitre.org/groups/G0007), such as [CHOPSTICK](https://attack.mitre.org/software/S0023), use a blend of HTTP, HTTPS, and other legitimate channels for C2, depending on module configuration.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+          "source_url": "https://attack.mitre.org/techniques/T1071/001"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)"
+        }
+      ],
+      "anchors": [
+        "T1021.007",
+        "G0016"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:17.2334506Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"The mitigation linked to Cloud Services (T1021.007) as reported for APT29 is Azure AD PowerShell. The two-edge evidence path is: APT29 (G0016) -> Cloud Services (T1021.007) -> Azure AD PowerShell.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0\", \"attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1187253300,
+        "load_duration": 4320300,
+        "prompt_eval_count": 1532,
+        "prompt_eval_cached_count": 420,
+        "prompt_eval_duration": 147015000,
+        "eval_count": 142,
+        "eval_duration": 979671000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-05",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to Software Packing (T1027.002) as reported for APT29, and what is the two-edge evidence path?",
+    "reference": "APT29 (G0016) USES Software Packing (T1027.002), which is MITIGATED_BY Antivirus/Antimalware (M1049). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+        "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+        "source_url": "https://attack.mitre.org/techniques/T1027/002",
+        "evidence_text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. "
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "T1027.002",
+          "target_id": "M1049",
+          "predicate": "MITIGATED_BY",
+          "evidence_text": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1027.002",
+          "predicate": "USES",
+          "evidence_text": "[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 782.9989999881946,
+    "generated_at": "2026-10-17T03:04:18.019025Z",
+    "response": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+    "retrieved_contexts": [
+      "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+      "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. ",
+      "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+      "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+    ],
+    "trace": {
+      "retrieval_ms": 36.225899995770305,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4:0",
+          "text": "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+          "document_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+          "source_url": "https://attack.mitre.org/techniques/T1027/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+          "text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. ",
+          "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+          "source_url": "https://attack.mitre.org/techniques/T1027/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+          "source_url": "https://attack.mitre.org/techniques/T1005"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "text": "Record context: APT29 (G0016); Cloud Services (T1021.007).\n\n[APT29](https://attack.mitre.org/groups/G0016) has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "document_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d",
+          "source_url": "https://attack.mitre.org/techniques/T1021/007"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "text": "Record context: APT29 (G0016); Security Account Manager (T1003.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+          "source_url": "https://attack.mitre.org/techniques/T1003/002"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)"
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--93e345d9-a7d2-4abd-be34-46211fa64a7d:0",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)"
+        },
+        {
+          "source_id": "T1027.002",
+          "target_id": "M1049",
+          "predicate": "MITIGATED_BY",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+          "evidence_text": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware."
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1027.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4:0",
+          "evidence_text": "[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)"
+        }
+      ],
+      "anchors": [
+        "T1027.002",
+        "G0016"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:18.0159166Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 726599600,
+        "load_duration": 4377500,
+        "prompt_eval_count": 1621,
+        "prompt_eval_cached_count": 538,
+        "prompt_eval_duration": 141369000,
+        "eval_count": 76,
+        "eval_duration": 527871999
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 1.0,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-06",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to Junk Data (T1001.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES Junk Data (T1001.001), which is MITIGATED_BY Network Intrusion Prevention (M1031). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "Network Intrusion Prevention (M1031) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 (G0007) uses T1001.001 (Junk Data), and Network Intrusion Prevention (M1031) can mitigate T1001.001.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179:0",
+        "document_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179",
+        "source_url": "https://attack.mitre.org/techniques/T1001/001",
+        "evidence_text": "Record context: Network Intrusion Prevention (M1031); Junk Data (T1001.001).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. "
+      },
+      {
+        "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+        "document_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+        "source_url": "https://attack.mitre.org/techniques/T1048/002",
+        "evidence_text": "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1070.006",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has performed timestomping on victim files.(Citation: Crowdstrike DNC June 2016)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "T1001.001",
+          "target_id": "M1031",
+          "predicate": "MITIGATED_BY",
+          "evidence_text": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level.",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1040",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 1419.8624000127893,
+    "generated_at": "2026-10-17T03:04:19.441406Z",
+    "response": "Network Intrusion Prevention (M1031) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 (G0007) uses T1001.001 (Junk Data), and Network Intrusion Prevention (M1031) can mitigate T1001.001.",
+    "retrieved_contexts": [
+      "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: Network Intrusion Prevention (M1031); Junk Data (T1001.001).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. ",
+      "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+      "Record context: APT28 (G0007); Timestomp (T1070.006).\n\n[APT28](https://attack.mitre.org/groups/G0007) has performed timestomping on victim files.(Citation: Crowdstrike DNC June 2016)",
+      "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+    ],
+    "trace": {
+      "retrieval_ms": 39.59260002011433,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "text": "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+          "source_url": "https://attack.mitre.org/techniques/T1048/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179:0",
+          "text": "Record context: Network Intrusion Prevention (M1031); Junk Data (T1001.001).\n\nNetwork intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. ",
+          "document_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179",
+          "source_url": "https://attack.mitre.org/techniques/T1001/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "text": "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+          "document_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+          "source_url": "https://attack.mitre.org/techniques/T1040"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--1036833a-1d4c-4d9e-b716-1e52606ab684:0",
+          "text": "Record context: APT28 (G0007); Timestomp (T1070.006).\n\n[APT28](https://attack.mitre.org/groups/G0007) has performed timestomping on victim files.(Citation: Crowdstrike DNC June 2016)",
+          "document_id": "attack19.2:relationship--1036833a-1d4c-4d9e-b716-1e52606ab684",
+          "source_url": "https://attack.mitre.org/techniques/T1070/006"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "text": "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+          "source_url": "https://attack.mitre.org/techniques/T1039"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1070.006",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--1036833a-1d4c-4d9e-b716-1e52606ab684:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has performed timestomping on victim files.(Citation: Crowdstrike DNC June 2016)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "T1001.001",
+          "target_id": "M1031",
+          "predicate": "MITIGATED_BY",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179:0",
+          "evidence_text": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level."
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1040",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017)"
+        }
+      ],
+      "anchors": [
+        "T1001.001",
+        "G0007"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:19.4381524Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"Network Intrusion Prevention (M1031) is linked to Junk Data (T1001.001) as reported for APT28. The two-edge evidence path is: APT28 (G0007) uses T1001.001 (Junk Data), and Network Intrusion Prevention (M1031) can mitigate T1001.001.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--7fd7a4ea-aa95-4037-8bb2-0ff6b06de179:0\", \"attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1356443100,
+        "load_duration": 4853400,
+        "prompt_eval_count": 1713,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 189142000,
+        "eval_count": 161,
+        "eval_duration": 1123138000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": true
+  },
+  {
+    "id": "qa-07",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to OS Credential Dumping (T1003) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES OS Credential Dumping (T1003), which is MITIGATED_BY Active Directory Configuration (M1015). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "The mitigation linked to OS Credential Dumping (T1003) as reported for APT28 is the use of ntdsutil.exe utility to export the Active Directory database for credential access.",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba:0",
+        "document_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+        "source_url": "https://attack.mitre.org/techniques/T1003/003",
+        "evidence_text": "Record context: APT28 (G0007); NTDS (T1003.003).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1003.003",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1057",
+          "predicate": "USES",
+          "evidence_text": "An [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1040",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 958.5094999929424,
+    "generated_at": "2026-10-17T03:04:20.401705Z",
+    "response": "The mitigation linked to OS Credential Dumping (T1003) as reported for APT28 is the use of ntdsutil.exe utility to export the Active Directory database for credential access.",
+    "retrieved_contexts": [
+      "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); NTDS (T1003.003).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+      "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); Process Discovery (T1057).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.(Citation: Unit 42 Playbook Dec 2017)"
+    ],
+    "trace": {
+      "retrieval_ms": 27.370299998437986,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "text": "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+          "source_url": "https://attack.mitre.org/techniques/T1048/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba:0",
+          "text": "Record context: APT28 (G0007); NTDS (T1003.003).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba",
+          "source_url": "https://attack.mitre.org/techniques/T1003/003"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "text": "Record context: APT28 (G0007); Network Sniffing (T1040).\n\n[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017) [APT28](https://attack.mitre.org/groups/G0007) close-access teams have used Wi-Fi pineapples to intercept Wi-Fi signals and user credentials.(Citation: US District Court Indictment GRU Oct 2018)",
+          "document_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25",
+          "source_url": "https://attack.mitre.org/techniques/T1040"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "text": "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+          "source_url": "https://attack.mitre.org/techniques/T1039"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49:0",
+          "text": "Record context: APT28 (G0007); Process Discovery (T1057).\n\nAn [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions.(Citation: Unit 42 Playbook Dec 2017)",
+          "document_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49",
+          "source_url": "https://attack.mitre.org/techniques/T1057"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1003.003",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used the ntdsutil.exe utility to export the Active Directory database for credential access.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1057",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--51d06864-d5de-4286-b2bb-561a8d2c4d49:0",
+          "evidence_text": "An [APT28](https://attack.mitre.org/groups/G0007) loader Trojan will enumerate the victim's processes searching for explorer.exe if its current process does not have necessary permissions."
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1040",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--cb69217e-f063-4093-bcf0-f051ecd42e25:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) deployed the open source tool Responder to conduct NetBIOS Name Service poisoning, which captured usernames and hashed passwords that allowed access to legitimate credentials.(Citation: FireEye APT28)(Citation: FireEye APT28 Hospitality Aug 2017)"
+        }
+      ],
+      "anchors": [
+        "T1003",
+        "G0007"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:20.3986583Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"The mitigation linked to OS Credential Dumping (T1003) as reported for APT28 is the use of ntdsutil.exe utility to export the Active Directory database for credential access.\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--01e22d76-e2ee-407a-834f-e3428df142ba:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 904013300,
+        "load_duration": 4291300,
+        "prompt_eval_count": 1742,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 197437000,
+        "eval_count": 92,
+        "eval_duration": 646892000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.0,
+    "path_ids_mentioned": false
+  },
+  {
+    "id": "qa-08",
+    "seed": 42,
+    "mode": "hybrid_without_node2vec",
+    "user_input": "In this frozen subset, which mitigation is linked to LSASS Memory (T1003.001) as reported for APT28, and what is the two-edge evidence path?",
+    "reference": "APT28 (G0007) USES LSASS Memory (T1003.001), which is MITIGATED_BY User Training (M1017). This is a recorded association, not proof that the mitigation prevents every occurrence.",
+    "answer": "LSASS Memory (T1003.001) is linked to LAMEHUG (S9035) as reported for APT28, and the two-edge evidence path is: APT28 (G0007) uses LAMEHUG (S9035) (USES) -> APT28 (G0007) uses LSASS Memory (T1003.001) (USES).",
+    "status": "answered",
+    "citations": [
+      {
+        "chunk_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+        "document_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+        "source_url": "https://attack.mitre.org/software/S9035",
+        "evidence_text": "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)"
+      },
+      {
+        "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+        "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+        "source_url": "https://attack.mitre.org/techniques/T1003/001",
+        "evidence_text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1027.013",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) encrypted a .dll payload using RTL and a custom encryption algorithm.",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "S9035",
+          "predicate": "USES",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1003.001",
+          "predicate": "USES",
+          "evidence_text": "They have also dumped the LSASS process memory using the MiniDump function.",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 1550.8192999986932,
+    "generated_at": "2026-10-17T03:04:21.955765Z",
+    "response": "LSASS Memory (T1003.001) is linked to LAMEHUG (S9035) as reported for APT28, and the two-edge evidence path is: APT28 (G0007) uses LAMEHUG (S9035) (USES) -> APT28 (G0007) uses LSASS Memory (T1003.001) (USES).",
+    "retrieved_contexts": [
+      "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)",
+      "Record context: APT28 (G0007); Encrypted/Encoded File (T1027.013).\n\n[APT28](https://attack.mitre.org/groups/G0007) encrypted a .dll payload using RTL and a custom encryption algorithm. [APT28](https://attack.mitre.org/groups/G0007) has also obfuscated payloads with base64, XOR, and RC4.(Citation: Bitdefender APT28 Dec 2015)(Citation: Unit 42 Sofacy Feb 2018)(Citation: Palo Alto Sofacy 06-2018)(Citation: Talos Seduploader Oct 2017)(Citation: Accenture SNAKEMACKEREL Nov 2018)"
+    ],
+    "trace": {
+      "retrieval_ms": 69.25760000012815,
+      "contexts": [
+        {
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "text": "Record context: APT28 (G0007); Data from Network Shared Drive (T1039).\n\n[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500",
+          "source_url": "https://attack.mitre.org/techniques/T1039"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "text": "Record context: APT28 (G0007); Exfiltration Over Asymmetric Encrypted Non-C2 Protocol (T1048.002).\n\n[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0",
+          "source_url": "https://attack.mitre.org/techniques/T1048/002"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+          "text": "Record context: APT28 (G0007); LSASS Memory (T1003.001).\n\n[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018) They have also dumped the LSASS process memory using the MiniDump function.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+          "document_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15",
+          "source_url": "https://attack.mitre.org/techniques/T1003/001"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+          "text": "Record context: APT28 (G0007); LAMEHUG (S9035).\n\n[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)",
+          "document_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf",
+          "source_url": "https://attack.mitre.org/software/S9035"
+        },
+        {
+          "chunk_id": "attack19.2:relationship--1b143de7-af2d-4991-9e2e-aa85a8d7d330:0",
+          "text": "Record context: APT28 (G0007); Encrypted/Encoded File (T1027.013).\n\n[APT28](https://attack.mitre.org/groups/G0007) encrypted a .dll payload using RTL and a custom encryption algorithm. [APT28](https://attack.mitre.org/groups/G0007) has also obfuscated payloads with base64, XOR, and RC4.(Citation: Bitdefender APT28 Dec 2015)(Citation: Unit 42 Sofacy Feb 2018)(Citation: Palo Alto Sofacy 06-2018)(Citation: Talos Seduploader Oct 2017)(Citation: Accenture SNAKEMACKEREL Nov 2018)",
+          "document_id": "attack19.2:relationship--1b143de7-af2d-4991-9e2e-aa85a8d7d330",
+          "source_url": "https://attack.mitre.org/techniques/T1027/013"
+        }
+      ],
+      "facts": [
+        {
+          "source_id": "G0007",
+          "target_id": "T1048.002",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--16ec2171-a002-4838-8e20-af89b2eeafd0:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has exfiltrated archives of collected data previously staged on a target's OWA server via HTTPS.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1027.013",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--1b143de7-af2d-4991-9e2e-aa85a8d7d330:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) encrypted a .dll payload using RTL and a custom encryption algorithm."
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1039",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--41fd6ebb-4262-40f8-842e-ff583ff01500:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has collected files from network shared drives.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "S9035",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0",
+          "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used [LAMEHUG](https://attack.mitre.org/software/S9035) against targets in Ukraine.(Citation: Nov AI Threat Tracker)(Citation: Cato LAMEHUG JUL 2025)"
+        },
+        {
+          "source_id": "G0007",
+          "target_id": "T1003.001",
+          "predicate": "USES",
+          "confidence": 0.95,
+          "chunk_id": "attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0",
+          "evidence_text": "They have also dumped the LSASS process memory using the MiniDump function."
+        }
+      ],
+      "anchors": [
+        "T1003",
+        "T1003.001",
+        "G0007"
+      ],
+      "raw": {
+        "model": "llama3.1:8b",
+        "created_at": "2026-10-17T03:04:21.9526503Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"answer\": \"LSASS Memory (T1003.001) is linked to LAMEHUG (S9035) as reported for APT28, and the two-edge evidence path is: APT28 (G0007) uses LAMEHUG (S9035) (USES) -> APT28 (G0007) uses LSASS Memory (T1003.001) (USES).\",\n  \"status\": \"answered\",\n  \"cited_chunk_ids\": [\"attack19.2:relationship--b016557c-86f6-4a2d-8963-4b580b8d5dcf:0\", \"attack19.2:relationship--e71903c4-a7af-4317-adf0-10f76d3d4e15:0\"]\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 1461691400,
+        "load_duration": 4376700,
+        "prompt_eval_count": 1819,
+        "prompt_eval_cached_count": 196,
+        "prompt_eval_duration": 201266000,
+        "eval_count": 176,
+        "eval_duration": 1217836000
+      },
+      "seed": 42,
+      "citation_ids_valid": true
+    },
+    "evidence_recall": 0.5,
+    "path_ids_mentioned": false
+  }
+]

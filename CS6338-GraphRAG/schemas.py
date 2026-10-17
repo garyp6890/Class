@@ -47,12 +47,13 @@ class GraphChunk(StrictModel):
 
 class GraphRAGQueryRequest(StrictModel):
     query: str = Field(min_length=3,max_length=2000)
-    mode: Literal['text_only','hybrid'] = 'hybrid'
+    mode: Literal['text_only','hybrid','hybrid_without_node2vec'] = 'hybrid'
     top_k_chunks: int = Field(default=5,ge=1,le=10)
     max_hop_distance: int = Field(default=2,ge=1,le=2)
     enable_reasoning_rules: bool = True
 
 class Citation(StrictModel):
+    citation_id: str | None = None
     chunk_id: str
     document_id: str
     source_url: str

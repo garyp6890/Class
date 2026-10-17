@@ -1,0 +1,8 @@
+{
+  "documents": 60,
+  "entities": 50,
+  "reference_triples": 60,
+  "qa_pairs": 22,
+  "test_qa": 20,
+  "student_review": "pending"
+}

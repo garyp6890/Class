@@ -4,8 +4,9 @@ from pathlib import Path
 from neo4j import GraphDatabase
 
 def driver():
-    return GraphDatabase.driver(os.getenv('NEO4J_URI','bolt://localhost:7687'),
-        auth=(os.getenv('NEO4J_USER','neo4j'),os.environ['NEO4J_PASSWORD']))
+    return GraphDatabase.driver(os.getenv('NEO4J_URI','bolt://127.0.0.1:7687'),
+        auth=(os.getenv('NEO4J_USER','neo4j'),os.environ['NEO4J_PASSWORD']),
+        connection_timeout=5, max_transaction_retry_time=10)
 
 if __name__=='__main__':
     database=os.environ['NEO4J_DATABASE']

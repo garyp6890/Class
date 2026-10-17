@@ -1,0 +1,17 @@
+mode,attempted,metric,finite,missing,mean
+text_only,20,faithfulness,20,0,0.3458333333333333
+text_only,20,answer_relevancy,20,0,0.8030696059500407
+text_only,20,context_recall,20,0,0.44999999999999996
+text_only,20,factual_correctness,20,0,0.2465
+hybrid_without_node2vec,20,faithfulness,20,0,0.5391666666666667
+hybrid_without_node2vec,20,answer_relevancy,20,0,0.7670224639648602
+hybrid_without_node2vec,20,context_recall,20,0,0.48333333333333334
+hybrid_without_node2vec,20,factual_correctness,20,0,0.4135
+hybrid,20,faithfulness,20,0,0.5391666666666667
+hybrid,20,answer_relevancy,20,0,0.8015208453221887
+hybrid,20,context_recall,20,0,0.48333333333333334
+hybrid,20,factual_correctness,20,0,0.3825
+pooled,60,faithfulness,60,0,0.4747222222222222
+pooled,60,answer_relevancy,60,0,0.7905376384123631
+pooled,60,context_recall,60,0,0.4722222222222222
+pooled,60,factual_correctness,60,0,0.3475

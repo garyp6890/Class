@@ -1,0 +1,153 @@
+@prefix cti: <https://example.org/cs6338/cti/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cti:G0007 a cti:ThreatGroup ;
+    rdfs:label "APT28" .
+
+cti:G0016 a cti:ThreatGroup ;
+    rdfs:label "APT29" .
+
+cti:G0032 a cti:ThreatGroup ;
+    rdfs:label "Lazarus Group" .
+
+cti:G0046 a cti:ThreatGroup ;
+    rdfs:label "FIN7" .
+
+cti:M1015 a cti:Mitigation ;
+    rdfs:label "Active Directory Configuration" .
+
+cti:M1017 a cti:Mitigation ;
+    rdfs:label "User Training" .
+
+cti:M1018 a cti:Mitigation ;
+    rdfs:label "User Account Management" .
+
+cti:M1026 a cti:Mitigation ;
+    rdfs:label "Privileged Account Management" .
+
+cti:M1031 a cti:Mitigation ;
+    rdfs:label "Network Intrusion Prevention" .
+
+cti:M1033 a cti:Mitigation ;
+    rdfs:label "Limit Software Installation" .
+
+cti:M1049 a cti:Mitigation ;
+    rdfs:label "Antivirus/Antimalware" .
+
+cti:M1057 a cti:Mitigation ;
+    rdfs:label "Data Loss Prevention" .
+
+cti:S1182 a cti:Software ;
+    rdfs:label "MagicRAT" .
+
+cti:S9035 a cti:Software ;
+    rdfs:label "LAMEHUG" .
+
+cti:T1001.001 a cti:Technique ;
+    rdfs:label "Junk Data" .
+
+cti:T1001.003 a cti:Technique ;
+    rdfs:label "Protocol or Service Impersonation" .
+
+cti:T1003 a cti:Technique ;
+    rdfs:label "OS Credential Dumping" .
+
+cti:T1003.001 a cti:Technique ;
+    rdfs:label "LSASS Memory" .
+
+cti:T1003.002 a cti:Technique ;
+    rdfs:label "Security Account Manager" .
+
+cti:T1003.003 a cti:Technique ;
+    rdfs:label "NTDS" .
+
+cti:T1003.004 a cti:Technique ;
+    rdfs:label "LSA Secrets" .
+
+cti:T1005 a cti:Technique ;
+    rdfs:label "Data from Local System" .
+
+cti:T1008 a cti:Technique ;
+    rdfs:label "Fallback Channels" .
+
+cti:T1014 a cti:Technique ;
+    rdfs:label "Rootkit" .
+
+cti:T1016 a cti:Technique ;
+    rdfs:label "System Network Configuration Discovery" .
+
+cti:T1021.001 a cti:Technique ;
+    rdfs:label "Remote Desktop Protocol" .
+
+cti:T1021.002 a cti:Technique ;
+    rdfs:label "SMB/Windows Admin Shares" .
+
+cti:T1021.004 a cti:Technique ;
+    rdfs:label "SSH" .
+
+cti:T1021.005 a cti:Technique ;
+    rdfs:label "VNC" .
+
+cti:T1021.007 a cti:Technique ;
+    rdfs:label "Cloud Services" .
+
+cti:T1025 a cti:Technique ;
+    rdfs:label "Data from Removable Media" .
+
+cti:T1027.002 a cti:Technique ;
+    rdfs:label "Software Packing" .
+
+cti:T1027.013 a cti:Technique ;
+    rdfs:label "Encrypted/Encoded File" .
+
+cti:T1030 a cti:Technique ;
+    rdfs:label "Data Transfer Size Limits" .
+
+cti:T1036 a cti:Technique ;
+    rdfs:label "Masquerading" .
+
+cti:T1036.005 a cti:Technique ;
+    rdfs:label "Match Legitimate Resource Name or Location" .
+
+cti:T1037.001 a cti:Technique ;
+    rdfs:label "Logon Script (Windows)" .
+
+cti:T1039 a cti:Technique ;
+    rdfs:label "Data from Network Shared Drive" .
+
+cti:T1040 a cti:Technique ;
+    rdfs:label "Network Sniffing" .
+
+cti:T1048.002 a cti:Technique ;
+    rdfs:label "Exfiltration Over Asymmetric Encrypted Non-C2 Protocol" .
+
+cti:T1056.001 a cti:Technique ;
+    rdfs:label "Keylogging" .
+
+cti:T1057 a cti:Technique ;
+    rdfs:label "Process Discovery" .
+
+cti:T1059.001 a cti:Technique ;
+    rdfs:label "PowerShell" .
+
+cti:T1059.003 a cti:Technique ;
+    rdfs:label "Windows Command Shell" .
+
+cti:T1068 a cti:Technique ;
+    rdfs:label "Exploitation for Privilege Escalation" .
+
+cti:T1070.004 a cti:Technique ;
+    rdfs:label "File Deletion" .
+
+cti:T1070.006 a cti:Technique ;
+    rdfs:label "Timestomp" .
+
+cti:T1071.001 a cti:Technique ;
+    rdfs:label "Web Protocols" .
+
+cti:T1071.003 a cti:Technique ;
+    rdfs:label "Mail Protocols" .
+
+cti:T1074.001 a cti:Technique ;
+    rdfs:label "Local Data Staging" .
+

@@ -1,0 +1,71 @@
+{
+  "question_id": "qa-05",
+  "request": {
+    "mode": "hybrid",
+    "query": "In this frozen subset, which mitigation is linked to Software Packing (T1027.002) as reported for APT29, and what is the two-edge evidence path?"
+  },
+  "response": {
+    "answer": "Heuristic-based malware detection (M1049) is linked to Software Packing (T1027.002) as reported for APT29. The two-edge evidence path is: APT29 (G0016) uses Software Packing (T1027.002) [C1], and Software Packing (T1027.002) is mitigated by Heuristic-based malware detection (M1049) [C2].",
+    "status": "answered",
+    "citations": [
+      {
+        "citation_id": "C1",
+        "chunk_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4:0",
+        "document_id": "attack19.2:relationship--ff4e1b0e-eea2-4329-aecc-e5353be8c1f4",
+        "source_url": "https://attack.mitre.org/techniques/T1027/002",
+        "evidence_text": "Record context: APT29 (G0016); Software Packing (T1027.002).\n\n[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)"
+      },
+      {
+        "citation_id": "C2",
+        "chunk_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e:0",
+        "document_id": "attack19.2:relationship--a44728b1-9cb4-4307-8c4c-37b5acba536e",
+        "source_url": "https://attack.mitre.org/techniques/T1027/002",
+        "evidence_text": "Record context: Antivirus/Antimalware (M1049); Software Packing (T1027.002).\n\nEmploy heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware. "
+      }
+    ],
+    "retrieved_subgraph": {
+      "nodes": [],
+      "edges": [
+        {
+          "source_id": "G0016",
+          "target_id": "T1003.002",
+          "predicate": "USES",
+          "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1005",
+          "predicate": "USES",
+          "evidence_text": "Record context: APT29 (G0016); Data from Local System (T1005).\n\n[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1021.007",
+          "predicate": "USES",
+          "evidence_text": "has leveraged compromised high-privileged on-premises accounts synced to Office 365 to move laterally into a cloud environment, including through the use of Azure AD PowerShell.(Citation: Mandiant Remediation and Hardening Strategies for Microsoft 365)",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "T1027.002",
+          "target_id": "M1049",
+          "predicate": "MITIGATED_BY",
+          "evidence_text": "Employ heuristic-based malware detection. Ensure updated virus definitions and create custom signatures for observed malware.",
+          "confidence": 0.95
+        },
+        {
+          "source_id": "G0016",
+          "target_id": "T1027.002",
+          "predicate": "USES",
+          "evidence_text": "[APT29](https://attack.mitre.org/groups/G0016) used UPX to pack files.(Citation: Mandiant No Easy Breach)",
+          "confidence": 0.95
+        }
+      ],
+      "cypher_template_id": "bounded_paths"
+    },
+    "execution_time_ms": 1322.2437000076752,
+    "generated_at": "2026-10-17T03:26:28.484565Z"
+  },
+  "http_status": 200
+}

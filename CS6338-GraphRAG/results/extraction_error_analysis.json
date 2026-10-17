@@ -1,0 +1,242 @@
+{
+  "false_negatives": [
+    {
+      "id": "gold-038",
+      "subject_id": "G0032",
+      "predicate": "USES",
+      "object_id": "S1182",
+      "document_id": "attack19.2:relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+      "evidence_text": "[MagicRAT](https://attack.mitre.org/software/S1182) is exclusively associated with [Lazarus Group](https://attack.mitre.org/groups/G0032) operations in 2022.(Citation: Cisco MagicRAT 2022)",
+      "source_relationship_id": "relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-056",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1070.004",
+      "document_id": "attack19.2:relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has intentionally deleted computer files to cover their tracks, including with use of the program CCleaner.(Citation: DOJ GRU Indictment Jul 2018)",
+      "source_relationship_id": "relationship--5ea36f9f-f5b6-4494-be0a-061058d6b1f1",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-046",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1036.005",
+      "document_id": "attack19.2:relationship--6a1ddd06-a5bd-440b-aa19-285e7370477c",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has changed extensions on files containing exfiltrated data to make them appear benign, and renamed a web shell instance to appear as a legitimate OWA page.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--6a1ddd06-a5bd-440b-aa19-285e7370477c",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-019",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1005",
+      "document_id": "attack19.2:relationship--73e0604a-2509-43a6-9318-a9494e570363",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has retrieved internal documents from machines inside victim environments, including by using [Forfiles](https://attack.mitre.org/software/S0193) to stage documents before exfiltration.(Citation: Überwachung APT28 Forfiles June 2015)(Citation: DOJ GRU Indictment Jul 2018)(Citation: TrendMicro Pawn Storm 2019)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--73e0604a-2509-43a6-9318-a9494e570363",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-039",
+      "subject_id": "S1182",
+      "predicate": "USES",
+      "object_id": "T1016",
+      "document_id": "attack19.2:relationship--79c99261-dae6-4cd8-90b3-bf60fd57d5c9",
+      "evidence_text": "[MagicRAT](https://attack.mitre.org/software/S1182) collects system network information using commands such as `ipconfig /all`.(Citation: Cisco MagicRAT 2022)",
+      "source_relationship_id": "relationship--79c99261-dae6-4cd8-90b3-bf60fd57d5c9",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-058",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1071.001",
+      "document_id": "attack19.2:relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+      "evidence_text": "Later implants used by [APT28](https://attack.mitre.org/groups/G0007), such as [CHOPSTICK](https://attack.mitre.org/software/S0023), use a blend of HTTP, HTTPS, and other legitimate channels for C2, depending on module configuration.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--87f45aac-1025-4a44-af9c-db139ea60f78",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-059",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1071.003",
+      "document_id": "attack19.2:relationship--a1fe7df1-7c20-422e-8e86-042cd11b3501",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used IMAP, POP3, and SMTP for a communication channel in various implants, including using self-registered Google Mail accounts and later compromised email servers of its victims.(Citation: FireEye APT28)(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--a1fe7df1-7c20-422e-8e86-042cd11b3501",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-045",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1036",
+      "document_id": "attack19.2:relationship--a292f2c5-a071-424e-b8b8-03d195c466ad",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has renamed the WinRAR utility to avoid detection.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--a292f2c5-a071-424e-b8b8-03d195c466ad",
+      "split": "development",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-040",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1014",
+      "document_id": "attack19.2:relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has used a UEFI (Unified Extensible Firmware Interface) rootkit known as [LoJax](https://attack.mitre.org/software/S0397).(Citation: Symantec APT28 Oct 2018)(Citation: ESET LoJax Sept 2018)",
+      "source_relationship_id": "relationship--a5022441-bc5e-4b19-a773-b96b2719d1bb",
+      "split": "development",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-032",
+      "subject_id": "G0032",
+      "predicate": "USES",
+      "object_id": "T1008",
+      "document_id": "attack19.2:relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+      "evidence_text": "[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraAlfa sends data to one of the hard-coded C2 servers chosen at random, and if the transmission fails, chooses a new C2 server to attempt the transmission again.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+      "source_relationship_id": "relationship--ab687dca-2741-4920-a71e-e0e0444809c5",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-026",
+      "subject_id": "T1021.004",
+      "predicate": "MITIGATED_BY",
+      "object_id": "M1018",
+      "document_id": "attack19.2:relationship--b16c27b4-f94b-43e4-832d-986c03b96ffd",
+      "evidence_text": "Limit which user accounts are allowed to login via SSH.",
+      "source_relationship_id": "relationship--b16c27b4-f94b-43e4-832d-986c03b96ffd",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-044",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1030",
+      "document_id": "attack19.2:relationship--b4c27a33-0669-4b10-a801-eb81e3563260",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has split archived exfiltration files into chunks smaller than 1MB.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--b4c27a33-0669-4b10-a801-eb81e3563260",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-003",
+      "subject_id": "G0016",
+      "predicate": "USES",
+      "object_id": "T1003.004",
+      "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+      "evidence_text": "[APT29](https://attack.mitre.org/groups/G0016) has used the `reg save` command to extract LSA secrets offline.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+      "source_relationship_id": "relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-033",
+      "subject_id": "G0032",
+      "predicate": "USES",
+      "object_id": "T1021.001",
+      "document_id": "attack19.2:relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+      "evidence_text": "[Lazarus Group](https://attack.mitre.org/groups/G0032) malware SierraCharlie uses RDP for propagation.(Citation: Novetta Blockbuster)(Citation: Novetta Blockbuster RATs)",
+      "source_relationship_id": "relationship--c79796c1-88d6-4cd8-95d3-4f81d3755859",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-013",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1003",
+      "document_id": "attack19.2:relationship--c7e8689c-25cf-4fac-926e-c55a2414f16c",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) regularly deploys both publicly available (ex: [Mimikatz](https://attack.mitre.org/software/S0002)) and custom password retrieval tools on victims.(Citation: ESET Sednit Part 2)(Citation: DOJ GRU Indictment Jul 2018)(Citation: US District Court Indictment GRU Oct 2018)\t",
+      "source_relationship_id": "relationship--c7e8689c-25cf-4fac-926e-c55a2414f16c",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-011",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1001.001",
+      "document_id": "attack19.2:relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) added \"junk data\" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a \"junk length\" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.(Citation: FireEye APT28)",
+      "source_relationship_id": "relationship--dc10e96f-1d3c-4ab9-8df6-acdc8238ec6c",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-028",
+      "subject_id": "T1021.005",
+      "predicate": "MITIGATED_BY",
+      "object_id": "M1033",
+      "document_id": "attack19.2:relationship--f5d1e0f1-0e96-41dc-86a4-79307310a001",
+      "evidence_text": "Restrict software installation to user groups that require it. A VNC server must be manually installed by the user or adversary.",
+      "source_relationship_id": "relationship--f5d1e0f1-0e96-41dc-86a4-79307310a001",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    },
+    {
+      "id": "gold-041",
+      "subject_id": "G0007",
+      "predicate": "USES",
+      "object_id": "T1021.002",
+      "document_id": "attack19.2:relationship--fe028d0f-b02e-4856-8593-c71a07b9519b",
+      "evidence_text": "[APT28](https://attack.mitre.org/groups/G0007) has mapped network drives using [Net](https://attack.mitre.org/software/S0039) and administrator credentials.(Citation: Cybersecurity Advisory GRU Brute Force Campaign July 2021)",
+      "source_relationship_id": "relationship--fe028d0f-b02e-4856-8593-c71a07b9519b",
+      "split": "test",
+      "annotation_basis": "official STIX relation with narrative evidence",
+      "student_review_status": "pending"
+    }
+  ],
+  "false_positives": [
+    {
+      "document_id": "attack19.2:relationship--34bba6a3-6e01-4895-8eb6-df0ba2fab222",
+      "source_id": "G0032",
+      "target_id": "S1182",
+      "predicate": "ASSOCIATED_WITH",
+      "evidence_text": "[MagicRAT](https://attack.mitre.org/software/S1182) is exclusively associated with [Lazarus Group](https://attack.mitre.org/groups/G0032) operations in 2022.(Citation: Cisco MagicRAT 2022)",
+      "confidence": 0.95
+    }
+  ],
+  "validation_error_counts": {
+    "Evidence is not verbatim": 60,
+    "Invalid predicate direction/type": 27
+  },
+  "attempt_counts": {
+    "3": 5,
+    "2": 26,
+    "exhausted": 17,
+    "1": 12
+  },
+  "total_elapsed_seconds": 525.0257701999799,
+  "note": "All records shown; split-specific headline metrics remain in extraction_metrics.json."
+}

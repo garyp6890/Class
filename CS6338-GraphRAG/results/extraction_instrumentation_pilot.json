@@ -1,0 +1,205 @@
+[
+  {
+    "chunk_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c:0",
+    "document_id": "attack19.2:relationship--20785dd8-7692-4dcd-81ee-06bc9faa001c",
+    "elapsed_ms": 45080.1647999906,
+    "entities": [
+      {
+        "id": "G0016",
+        "name": "APT29",
+        "entity_type": "ThreatGroup",
+        "aliases": [
+          "APT29",
+          "IRON RITUAL",
+          "IRON HEMLOCK",
+          "NobleBaron",
+          "Dark Halo",
+          "NOBELIUM",
+          "UNC2452",
+          "YTTRIUM",
+          "The Dukes",
+          "Cozy Bear",
+          "CozyDuke",
+          "SolarStorm",
+          "Blue Kitsune",
+          "UNC3524",
+          "Midnight Blizzard"
+        ]
+      },
+      {
+        "id": "T1003.002",
+        "name": "Security Account Manager",
+        "entity_type": "Technique",
+        "aliases": []
+      }
+    ],
+    "accepted": [
+      {
+        "source_id": "G0016",
+        "target_id": "T1003.002",
+        "predicate": "USES",
+        "evidence_text": "has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+        "confidence": 0.95
+      }
+    ],
+    "review": [],
+    "rejected": [],
+    "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"G0016\",\n      \"name\": \"APT29\",\n      \"entity_type\": \"ThreatGroup\",\n      \"aliases\": [\"APT29\", \"IRON RITUAL\", \"IRON HEMLOCK\", \"NobleBaron\", \"Dark Halo\", \"NOBELIUM\", \"UNC2452\", \"YTTRIUM\", \"The Dukes\", \"Cozy Bear\", \"CozyDuke\", \"SolarStorm\", \"Blue Kitsune\", \"UNC3524\", \"Midnight Blizzard\"]\n    },\n    {\n      \"id\": \"T1003.002\",\n      \"name\": \"Security Account Manager\",\n      \"entity_type\": \"Technique\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source_id\": \"G0016\",\n      \"target_id\": \"T1003.002\",\n      \"predicate\": \"USES\",\n      \"evidence_text\": \"has used the `reg save` command to save registry hives.(Citation: Mandiant APT29 Eye Spy Email Nov 22)\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+    "attempts": 3
+  },
+  {
+    "chunk_id": "attack19.2:relationship--e51a1670-52b4-4a0e-b123-7b0ddcf30060:0",
+    "document_id": "attack19.2:relationship--e51a1670-52b4-4a0e-b123-7b0ddcf30060",
+    "elapsed_ms": 7099.828800011892,
+    "entities": [
+      {
+        "id": "M1017",
+        "name": "User Training",
+        "entity_type": "Mitigation",
+        "aliases": []
+      },
+      {
+        "id": "T1003.002",
+        "name": "Security Account Manager",
+        "entity_type": "Technique",
+        "aliases": []
+      }
+    ],
+    "accepted": [
+      {
+        "source_id": "T1003.002",
+        "target_id": "M1017",
+        "predicate": "MITIGATED_BY",
+        "evidence_text": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+        "confidence": 0.95
+      }
+    ],
+    "review": [],
+    "rejected": [],
+    "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"M1017\",\n      \"name\": \"User Training\",\n      \"entity_type\": \"Mitigation\",\n      \"aliases\": []\n    },\n    {\n      \"id\": \"T1003.002\",\n      \"name\": \"Security Account Manager\",\n      \"entity_type\": \"Technique\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source_id\": \"T1003.002\",\n      \"target_id\": \"M1017\",\n      \"predicate\": \"MITIGATED_BY\",\n      \"evidence_text\": \"Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+    "attempts": 2
+  },
+  {
+    "chunk_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc:0",
+    "document_id": "attack19.2:relationship--bd9a6be1-903f-4a7b-a143-8c8d1da6cabc",
+    "elapsed_ms": 12355.634599982295,
+    "status": "quarantined",
+    "errors": [
+      "Evidence is not verbatim",
+      "Evidence is not verbatim",
+      "Evidence is not verbatim"
+    ]
+  },
+  {
+    "chunk_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247:0",
+    "document_id": "attack19.2:relationship--e643eb2e-c309-48dc-b105-ffedb4a61247",
+    "elapsed_ms": 7022.636700014118,
+    "entities": [
+      {
+        "id": "M1017",
+        "name": "User Training",
+        "entity_type": "Mitigation",
+        "aliases": []
+      },
+      {
+        "id": "T1003.004",
+        "name": "LSA Secrets",
+        "entity_type": "Technique",
+        "aliases": []
+      }
+    ],
+    "accepted": [
+      {
+        "source_id": "T1003.004",
+        "target_id": "M1017",
+        "predicate": "MITIGATED_BY",
+        "evidence_text": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.",
+        "confidence": 0.95
+      }
+    ],
+    "review": [],
+    "rejected": [],
+    "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"M1017\",\n      \"name\": \"User Training\",\n      \"entity_type\": \"Mitigation\",\n      \"aliases\": []\n    },\n    {\n      \"id\": \"T1003.004\",\n      \"name\": \"LSA Secrets\",\n      \"entity_type\": \"Technique\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source_id\": \"T1003.004\",\n      \"target_id\": \"M1017\",\n      \"predicate\": \"MITIGATED_BY\",\n      \"evidence_text\": \"Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts.\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+    "attempts": 2
+  },
+  {
+    "chunk_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d:0",
+    "document_id": "attack19.2:relationship--3be08ed9-951a-4686-9f60-114f0468325d",
+    "elapsed_ms": 15622.066000010818,
+    "entities": [
+      {
+        "id": "G0016",
+        "name": "APT29",
+        "entity_type": "ThreatGroup",
+        "aliases": [
+          "APT29",
+          "IRON RITUAL",
+          "IRON HEMLOCK",
+          "NobleBaron",
+          "Dark Halo",
+          "NOBELIUM",
+          "UNC2452",
+          "YTTRIUM",
+          "The Dukes",
+          "Cozy Bear",
+          "CozyDuke",
+          "SolarStorm",
+          "Blue Kitsune",
+          "UNC3524",
+          "Midnight Blizzard"
+        ]
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "entity_type": "Technique",
+        "aliases": []
+      }
+    ],
+    "accepted": [
+      {
+        "source_id": "G0016",
+        "target_id": "T1005",
+        "predicate": "USES",
+        "evidence_text": "[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)",
+        "confidence": 0.95
+      }
+    ],
+    "review": [],
+    "rejected": [],
+    "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"G0016\",\n      \"name\": \"APT29\",\n      \"entity_type\": \"ThreatGroup\",\n      \"aliases\": [\"APT29\", \"IRON RITUAL\", \"IRON HEMLOCK\", \"NobleBaron\", \"Dark Halo\", \"NOBELIUM\", \"UNC2452\", \"YTTRIUM\", \"The Dukes\", \"Cozy Bear\", \"CozyDuke\", \"SolarStorm\", \"Blue Kitsune\", \"UNC3524\", \"Midnight Blizzard\"]\n    },\n    {\n      \"id\": \"T1005\",\n      \"name\": \"Data from Local System\",\n      \"entity_type\": \"Technique\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source_id\": \"G0016\",\n      \"target_id\": \"T1005\",\n      \"predicate\": \"USES\",\n      \"evidence_text\": \"[APT29](https://attack.mitre.org/groups/G0016) has stolen data from compromised hosts.(Citation: Mandiant APT29 Eye Spy Email Nov 22)\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+    "attempts": 3
+  },
+  {
+    "chunk_id": "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0:0",
+    "document_id": "attack19.2:relationship--53e53569-4ae7-453c-953e-fc683e7794b0",
+    "elapsed_ms": 7046.649099997012,
+    "entities": [
+      {
+        "id": "M1057",
+        "name": "Data Loss Prevention",
+        "entity_type": "Mitigation",
+        "aliases": []
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System",
+        "entity_type": "Technique",
+        "aliases": []
+      }
+    ],
+    "accepted": [
+      {
+        "source_id": "T1005",
+        "target_id": "M1057",
+        "predicate": "MITIGATED_BY",
+        "evidence_text": "Data loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted.",
+        "confidence": 0.95
+      }
+    ],
+    "review": [],
+    "rejected": [],
+    "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"M1057\",\n      \"name\": \"Data Loss Prevention\",\n      \"entity_type\": \"Mitigation\",\n      \"aliases\": []\n    },\n    {\n      \"id\": \"T1005\",\n      \"name\": \"Data from Local System\",\n      \"entity_type\": \"Technique\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"source_id\": \"T1005\",\n      \"target_id\": \"M1057\",\n      \"predicate\": \"MITIGATED_BY\",\n      \"evidence_text\": \"Data loss prevention can restrict access to sensitive data and detect sensitive data that is unencrypted.\",\n      \"confidence\": 0.95\n    }\n  ]\n}",
+    "attempts": 2
+  }
+]
